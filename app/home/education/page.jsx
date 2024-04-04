@@ -68,29 +68,6 @@ const education = () => {
         Feature Section Forty
         =====================================================
         */}
-      <div className="fancy-feature-forty mt-140 lg-mt-100">
-        <div className="container">
-          <div
-            className="title-style-one text-center mb-85 lg-mb-30"
-            data-aos="fade-up"
-          >
-            <div className="sc-title text-uppercase">OUR CORUSES</div>
-            <h2 className="main-title fw-500 tx-dark m0">
-              Explore 4000+ Free Online Courses
-            </h2>
-          </div>
-        </div>
-        {/* End .container */}
-
-        <div className="bg-wrapper m-auto">
-          <div className="container">
-            <div className="row">
-              <CourseCategory />
-            </div>
-          </div>
-        </div>
-        {/* End bg-wrapper */}
-      </div>
 
       {/*
     =====================================================
@@ -104,7 +81,7 @@ const education = () => {
               <div className="title-style-one mb-40 pt-30 lg-pt-10 lg-mb-20">
                 <div className="sc-title text-uppercase">CHoose your path</div>
                 <h2 className="main-title fw-500 tx-dark m0">
-                  What’s your goal?
+                What's New
                 </h2>
               </div>
               {/* End title */}
@@ -161,7 +138,7 @@ const education = () => {
         <div className="container">
           <div className="wrapper position-relative">
             <div className="title-style-one mb-30">
-              <h2 className="main-title fw-500 tx-dark m0">Featured Courses</h2>
+              <h2 className="main-title fw-500 tx-dark m0">Features of Course</h2>
             </div>
             <CourseFilter />
             {/* /.slider-wrapper */}
@@ -187,7 +164,7 @@ const education = () => {
         className="feedback-section-thirteen position-relative mt-130 pb-25 lg-mt-100"
         data-aos="fade-up"
       >
-        <div className="container">
+        {/* <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-7 col-sm-10 m-auto">
               <div className="title-style-one text-center mb-40 lg-mb-20">
@@ -197,13 +174,13 @@ const education = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* End .container */}
 
         <div className="inner-content">
           <div className="slider-wrapper">
             <div className="feedback_slider_seven">
-              <Testimonial />
+              {/* <Testimonial /> */}
             </div>
             {/* /.feedback_slider_seven */}
           </div>

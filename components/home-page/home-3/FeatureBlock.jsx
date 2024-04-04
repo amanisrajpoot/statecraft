@@ -1,18 +1,18 @@
 const featuresData = [
   {
     icon: "/images/icon/icon_124.svg",
-    title: "Learn skills over 120k+",
-    subtitle: "Video courses.",
+    title: "Current Affairs",
+    subtitle: "Over Millon+ Downloads",
   },
   {
     icon: "/images/icon/icon_125.svg",
-    title: "Choose courses taught",
-    subtitle: "Real-world experts.",
+    title: "Learn From Experts",
+    subtitle: "Ex-IAS/IFS Faculty",
   },
   {
     icon: "/images/icon/icon_126.svg",
-    title: "Learn lifetime access on",
-    subtitle: "Mobile and desktop.",
+    title: "Interview Preparations",
+    subtitle: "In Person Mock Rounds ",
   },
 ];
 

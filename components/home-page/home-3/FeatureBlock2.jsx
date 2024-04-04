@@ -1,6 +1,19 @@
+'use client'
 import Link from "next/link";
+import Slider from "react-slick";
 
 const FeatureBlock2 = () => {
+  const settings = {
+    dots: false,
+    arrow:false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 4000,
+    cssEase: "linear"
+  }
   return (
     <div className="fancy-feature-fortyFour position-relative pt-130 lg-pt-70">
       <div className="container">
@@ -9,7 +22,7 @@ const FeatureBlock2 = () => {
             <div className="title-style-one mb-30 mt-30">
               <div className="sc-title">BECOME AN INSTRUCTOR</div>
               <h2 className="main-title fw-500 tx-dark m0">
-                Join us &amp; Spread Knowledge.
+              Sample Focus Sheet
               </h2>
             </div>
             <p className="fs-20 tx-dark mb-50 md-mb-30">
@@ -23,11 +36,25 @@ const FeatureBlock2 = () => {
           {/* End .col-xl-5 */}
 
           <div className="col-xl-6 col-md-6 ms-auto" data-aos="fade-left">
-            <img
-              src="/images/media/img_68.png"
-              alt="media"
-              className="lazy-img sm-mt-40"
-            />
+
+            <Slider {...settings}>
+              <img
+                src="/images/assets/focusSheet1.png"
+                alt="media"
+                className="lazy-img sm-mt-40"
+              />
+              <img
+                src="/images/assets/focusSheet2.png"
+                alt="media"
+                className="lazy-img sm-mt-40"
+              />
+              <img
+                src="/images/assets/focusSheet3.png"
+                alt="media"
+                className="lazy-img sm-mt-40"
+              />
+            </Slider>
+            
           </div>
           {/* End .col-xl-6 */}
         </div>
