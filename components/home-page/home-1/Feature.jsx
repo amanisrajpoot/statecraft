@@ -65,7 +65,7 @@ const Feature = () => {
               alt="icon"
               className="position-absolute"
             />
-          </div>{" "}
+          </div>
           {/* /.card-style-fifteen */}
         </div>
       ))}

@@ -27,12 +27,15 @@ const SignUpBanner = () => {
             className="col-lg-5 col-md-6 ms-auto order-md-last"
             data-aos="fade-left"
           >
-            <div className="title-style-one mb-45 lg-mb-30">
-              <h2 className="main-title fw-500 text-white m0">Try it free</h2>
-            </div>
             <p className="fs-20 text-white mb-55 lg-mb-30">
-              If you’ve made it this far, you must be at least a little curious.
-              Sign up and take the first step toward your goals.
+              Statecraft Civil Services Academy is a well-known name for IAS
+              Preparation in Bangalore. We have a group of experienced
+              faculties, which includes IAS/IPS/IRS/IFS officers, Academicians,
+              and extraordinary tutors from all over the country. Statecraft
+              Academy as the name suggests is an outcome of some inspiring work
+              in the field of Civil Services tutoring. As an abode of knowledge,
+              Statecraft today intends to build its successes and continue to
+              help aspirants realize their dreams of becoming an IAS officer.
             </p>
             <Link href="/signup" className="btn-twentyFive fw-500 tran3s">
               Sign up
@@ -48,25 +51,16 @@ const SignUpBanner = () => {
               <div className="row">
                 <div className="col-xl-10 col-lg-11 m-auto">
                   <div className="row align-items-center">
-                    <div className="col-6">
-                      <img
-                        src="/images/media/img_69.jpg"
-                        alt="media"
-                        className="lazy-img img-one mt-30 mb-30 lg-mt-20 lg-mb-20"
-                      />
-                      <img
-                        src="/images/media/img_70.jpg"
-                        alt="media"
-                        className="lazy-img img-two mt-30 mb-30 lg-mt-20 lg-mb-20"
-                      />
-                    </div>
-                    <div className="col-6">
-                      <img
-                        src="/images/media/img_71.jpg"
-                        alt="media"
-                        className="lazy-img img-three mt-30 mb-30 lg-mt-20 lg-mb-20"
-                      />
-                    </div>
+                    <video
+                      src="/media/stateCraftAppPromo.mp4"
+                      controls
+                      width="100%"
+                      height="100%"
+                      playsInline
+                      className="lazy-video"
+                    >
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
               </div>
@@ -75,7 +69,30 @@ const SignUpBanner = () => {
                 alt="shapes"
                 className="lazy-img shapes shape-one"
               />
-            </div>{" "}
+            </div>
+            <div className="img-holder zn2 position-relative sm-mt-40 mt-40">
+              <div className="row">
+                <div className="col-xl-10 col-lg-11 m-auto">
+                  <div className="row align-items-center">
+                    <video
+                      src="/media/stateCraftVideo.mp4"
+                      controls
+                      width="100%"
+                      height="100%"
+                      playsInline
+                      className="lazy-video"
+                    >
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <img
+                src="/images/shape/shape_155.svg"
+                alt="shapes"
+                className="lazy-img shapes shape-one"
+              />
+            </div>
             {/* /.img-holder */}
           </div>
         </div>

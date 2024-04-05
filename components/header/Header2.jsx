@@ -62,7 +62,7 @@ const DefaulHeader = () => {
             >
               Get Started
             </Link>
-          </div>{" "}
+          </div>
           {/* /.right-widget */}
           <MainMenu />
         </div>

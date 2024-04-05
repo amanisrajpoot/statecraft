@@ -15,9 +15,13 @@ import Hero from "@/components/home-page/home-3/Hero";
 import HowToStartBlock from "@/components/home-page/home-3/HowToStartBlock";
 import SignUpBanner from "@/components/home-page/home-3/SignUpBanner";
 import Testimonial from "@/components/home-page/home-3/Testimonial";
+import HeroCorousel from "@/components/home-page/home-3/HeroCorousel";
+import FeatureBlockHeader from "@/components/home-page/home-3/FeatureBlockHeader";
+
 export const metadata = {
   title: "Education || Jano - Creative Multipurpose React NextJS Template",
 };
+
 const education = () => {
   return (
     <>
@@ -30,39 +34,14 @@ const education = () => {
         Theme Hero Banner
         ============================================== 
         --> */}
+      <HeroCorousel />
+      <FeatureBlockHeader />
       <Hero />
       {/* <!--
         =====================================================
         Feature Section Thirty Nine
         =====================================================
         --> */}
-      <div className="fancy-feature-thirtyNine position-relative zn2 pt-90 pb-50 lg-pt-50 lg-pb-10">
-        <div className="container">
-          <div className="row gx-xxl-5">
-            <FeatureBlock />
-          </div>
-        </div>
-        <img
-          src="/images/shape/shape_148.svg"
-          alt="shape"
-          className="shapes shape-one lazy-img"
-        />
-        <img
-          src="/images/shape/shape_149.svg"
-          alt="shape"
-          className="shapes shape-two lazy-img"
-        />
-        <img
-          src="/images/shape/shape_150.svg"
-          alt="shape"
-          className="shapes shape-three lazy-img"
-        />
-        <img
-          src="/images/shape/shape_151.svg"
-          alt="shape"
-          className="shapes shape-four lazy-img"
-        />
-      </div>
       {/*
         =====================================================
         Feature Section Forty
@@ -79,10 +58,8 @@ const education = () => {
           <div className="row">
             <div className="col-xl-5 col-lg-6" data-aos="fade-right">
               <div className="title-style-one mb-40 pt-30 lg-pt-10 lg-mb-20">
-                <div className="sc-title text-uppercase">CHoose your path</div>
-                <h2 className="main-title fw-500 tx-dark m0">
-                What's New
-                </h2>
+                <div className="sc-title text-uppercase">Choose your path</div>
+                <h2 className="main-title fw-500 tx-dark m0">What's New</h2>
               </div>
               {/* End title */}
               <Faq />
@@ -104,7 +81,7 @@ const education = () => {
                 <img
                   src="/images/shape/shape_152.svg"
                   alt="shape"
-                  className="lazy-img shapes shape-one"
+                  className="lazy-img shapes shape-one h-screen"
                 />
                 <img
                   src="/images/shape/shape_153.svg"
@@ -138,7 +115,9 @@ const education = () => {
         <div className="container">
           <div className="wrapper position-relative">
             <div className="title-style-one mb-30">
-              <h2 className="main-title fw-500 tx-dark m0">Features of Course</h2>
+              <h2 className="main-title fw-500 tx-dark m0">
+                Features of Course
+              </h2>
             </div>
             <CourseFilter />
             {/* /.slider-wrapper */}
@@ -164,23 +143,23 @@ const education = () => {
         className="feedback-section-thirteen position-relative mt-130 pb-25 lg-mt-100"
         data-aos="fade-up"
       >
-        {/* <div className="container">
+        <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-md-7 col-sm-10 m-auto">
+            <div className="col-lg-5 col-md-8 col-sm-10 m-auto">
               <div className="title-style-one text-center mb-40 lg-mb-20">
                 <h2 className="main-title fw-500 tx-dark m0">
-                  What’s our client Say About us.
+                  Our Champion's Chronicles
                 </h2>
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
         {/* End .container */}
 
         <div className="inner-content">
           <div className="slider-wrapper">
             <div className="feedback_slider_seven">
-              {/* <Testimonial /> */}
+              <Testimonial />
             </div>
             {/* /.feedback_slider_seven */}
           </div>

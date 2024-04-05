@@ -87,7 +87,7 @@ const Pricing2 = () => {
         <div className="plan">{plan.name}</div>
         <div className="price">{plan.price}</div>
         <div className="info">{plan.info}</div>
-      </div>{" "}
+      </div>
       {/* /.pr-header */}
       <div className="pr-body">
         <ul className="style-none">

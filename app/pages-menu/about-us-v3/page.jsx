@@ -55,7 +55,7 @@ const AboutUsV3 = () => {
           <div className="row align-items-center">
             <AboutCeo />
           </div>
-        </div>{" "}
+        </div>
         {/* /.container */}
         <div className="container">
           <div className="row justify-content-center pt-60 md-pt-40">
@@ -80,7 +80,7 @@ const AboutUsV3 = () => {
                   <h2 className="main-title fw-bold tx-dark">
                     Why <span>choose</span> Jano.
                   </h2>
-                </div>{" "}
+                </div>
                 {/* /.title-style-one */}
                 <p className="text-lg mt-40 lg-mt-20">
                   We helping our client to fullfill their needs with our expert.
@@ -130,7 +130,7 @@ const AboutUsV3 = () => {
             alt="icon"
             className="lazy-img shapes shape-four"
           />
-        </div>{" "}
+        </div>
         {/* /.bg-wrapper */}
       </div>
       {/* /.fancy-feature-fiftyFour */}
@@ -149,7 +149,7 @@ const AboutUsV3 = () => {
                 <h2 className="main-title fw-bold tx-dark m0">
                   We’ve talented expert to help you
                 </h2>
-              </div>{" "}
+              </div>
               {/* /.title-style-one */}
             </div>
             <div
@@ -160,7 +160,7 @@ const AboutUsV3 = () => {
                 View full team
               </a>
             </div>
-          </div>{" "}
+          </div>
           {/* /.row */}
           <div className="wrapper border-bottom pt-80 lg-pt-50">
             <div className="row gx-xxl-5">
@@ -207,10 +207,10 @@ const AboutUsV3 = () => {
             <div className="col-xl-8 col-lg-10 m-auto text-center">
               <div className="title-style-one" data-aos="fade-up">
                 <h2 className="main-title fw-bold tx-dark m0">
-                  Ready to take plan? It’s just a matter of{" "}
+                  Ready to take plan? It’s just a matter of
                   <span>one clike</span>
                 </h2>
-              </div>{" "}
+              </div>
               {/* /.title-style-one */}
               <p
                 className="text-lg tx-dark pt-40 pb-35 lg-pt-30 lg-pb-20"

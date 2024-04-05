@@ -36,7 +36,6 @@ const ServiceV3 = () => {
                 <h2 className="main-title font-recoleta fw-normal tx-dark">
                   Get
                   <span className="position-relative">
-                    {" "}
                     Quality
                     <img src="/images/shape/shape_122.svg" alt="icon shape" />
                   </span>
@@ -133,7 +132,6 @@ const ServiceV3 = () => {
                   <h2 className="main-title font-recoleta fw-normal tx-dark">
                     What
                     <span className="position-relative">
-                      {" "}
                       client <img src="/images/shape/shape_129.svg" alt="" />
                     </span>
                     think about us.
@@ -174,7 +172,7 @@ const ServiceV3 = () => {
                 <h2 className="main-title font-recoleta fw-normal tx-dark">
                   Have Any Project? <br />
                   <span className="position-relative">
-                    Let’s Talk{" "}
+                    Let’s Talk
                     <img src="/images/shape/shape_132.svg" alt="shape" />
                   </span>
                   &amp; Grow your Business

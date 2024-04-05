@@ -227,7 +227,7 @@ const DesignAgency = () => {
               >
                 <span className="icon d-flex align-items-center justify-content-center rounded-circle">
                   <i className="far fa-envelope" />
-                </span>{" "}
+                </span>
                 <span>support@jano.com</span>
               </a>
             </div>

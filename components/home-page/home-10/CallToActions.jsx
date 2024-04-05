@@ -25,7 +25,7 @@ const CallToActions = () => {
                   <div className="subscribe-form">
                     <Form />
                     <p className="m0 pt-10">
-                      Already a member?{" "}
+                      Already a member?
                       <Link href="/login" className="tx-dark">
                         Sign in.
                       </Link>

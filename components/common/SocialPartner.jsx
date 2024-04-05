@@ -30,7 +30,7 @@ const SocialPartner = () => {
             <a href="#">
               <img src={logo.src} alt="logo" className={logo.className} />
             </a>
-          </div>{" "}
+          </div>
           {/* /.img-box */}
         </div>
       ))}

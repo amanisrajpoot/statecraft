@@ -16,7 +16,7 @@ const Subsribe = () => {
         </button>
       </form>
       <p className="m0 pt-20 text-white">
-        Already a member?{" "}
+        Already a member?
         <Link href="/login" className="fw-500 text-decoration-underline">
           Sign in.
         </Link>

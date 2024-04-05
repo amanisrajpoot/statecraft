@@ -95,7 +95,7 @@ const PricingV2 = () => {
                 Contact us
               </Link>
             </div>
-          </div>{" "}
+          </div>
           {/* /.bg-wrapper */}
         </div>
       </div>
@@ -115,7 +115,7 @@ const PricingV2 = () => {
                 <h2 className="main-title fw-normal">
                   Have any question In mind?
                 </h2>
-              </div>{" "}
+              </div>
               {/* /.title-style-four */}
               <div
                 className="fs-15 fw-500 pt-40 pb-5 lg-pt-30"
@@ -139,7 +139,7 @@ const PricingV2 = () => {
               <Faq2 />
             </div>
           </div>
-        </div>{" "}
+        </div>
         {/* /.container */}
       </div>
       {/* /.fancy-feature-eleven */}
@@ -158,17 +158,17 @@ const PricingV2 = () => {
                 data-aos="fade-up"
               >
                 <h2 className="main-title fw-normal">
-                  Thousands of{" "}
+                  Thousands of
                   <span className="d-inline-block position-relative">
-                    customers{" "}
+                    customers
                     <span
                       className="mark-bg"
                       style={{ backgroundColor: "#CDFFF0" }}
                     />
-                  </span>{" "}
+                  </span>
                   use Jano as their digital HQ, including:
                 </h2>
-              </div>{" "}
+              </div>
               {/* /.title-style-three */}
             </div>
           </div>

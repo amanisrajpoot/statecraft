@@ -16,7 +16,7 @@ const CallToActions = () => {
                     <h4 className="main-title fw-bold tx-dark">
                       New user? Start your free trial now.
                     </h4>
-                  </div>{" "}
+                  </div>
                   {/* /.title-style-two */}
                 </div>
                 {/* End .col-lg-6 */}
@@ -37,7 +37,7 @@ const CallToActions = () => {
                       </button>
                     </form>
                     <p className="m0 pt-10">
-                      Already a member?{" "}
+                      Already a member?
                       <Link href="/login" className="tx-dark">
                         Sign in.
                       </Link>
@@ -47,10 +47,10 @@ const CallToActions = () => {
                 </div>
                 {/* End .col-lg-6 */}
               </div>
-            </div>{" "}
+            </div>
             {/* /.subscribe-area */}
           </div>
-        </div>{" "}
+        </div>
         {/* /.bg-wrapper */}
       </div>
     </div>

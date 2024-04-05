@@ -8,7 +8,7 @@ const FancyBanner = () => {
               <h2 className="main-title fw-bold tx-dark m0">
                 Ready to take plan? It’s just a matter of <span>one clike</span>
               </h2>
-            </div>{" "}
+            </div>
             {/* /.title-style-one */}
             <p
               className="text-lg tx-dark pt-40 pb-35 lg-pt-30 lg-pb-20 "

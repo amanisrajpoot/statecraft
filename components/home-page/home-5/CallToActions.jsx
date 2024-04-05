@@ -16,7 +16,7 @@ const CallToActions = () => {
               Let’s get started with us.
             </h2>
             <p className="text-lg text-white m0">
-              For furthur info &amp; support,{" "}
+              For furthur info &amp; support,
               <Link href="/contact" className="text-decoration-underline">
                 Contact us.
               </Link>

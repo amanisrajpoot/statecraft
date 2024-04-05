@@ -48,7 +48,7 @@ const Header = () => {
             >
               Contact us
             </Link>
-          </div>{" "}
+          </div>
           {/* /.right-widget */}
           <MainMenu />
         </div>
