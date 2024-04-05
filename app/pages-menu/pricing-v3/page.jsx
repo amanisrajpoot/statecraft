@@ -31,9 +31,9 @@ const PricingV3 = () => {
             <div className="col-xxl-10 col-md-9 m-auto">
               <div className="title-style-seven text-center" data-aos="fade-up">
                 <h2 className="main-title fw-bold tx-dark">
-                  Solo, Agency or Team? We’ve got you{" "}
+                  Solo, Agency or Team? We’ve got you
                   <span className="position-relative d-inline-block">
-                    covered{" "}
+                    covered
                     <Image
                       width={305}
                       height={104}
@@ -52,12 +52,12 @@ const PricingV3 = () => {
           <div className="row">
             <Pricing3 />
           </div>
-        </div>{" "}
+        </div>
         {/* /.pricing-table-area-four */}
         <div className="container">
           <div className="text-center mt-70 lg-mt-40" data-aos="fade-up">
             <div className="d-inline-block consult-text fs-18 fw-500 tx-dark">
-              Not sure which website hosting plan is right for you? We can help.{" "}
+              Not sure which website hosting plan is right for you? We can help.
               <Link
                 href="/contact/contact-v3"
                 className="fw-normal text-decoration-underline"
@@ -66,7 +66,7 @@ const PricingV3 = () => {
               </Link>
             </div>
           </div>
-        </div>{" "}
+        </div>
         {/* /.container */}
       </div>
       {/* /.pricing-section-four */}
@@ -82,16 +82,16 @@ const PricingV3 = () => {
             <div className="col-xxl-9 col-md-9 m-auto">
               <div className="title-style-seven text-center" data-aos="fade-up">
                 <h2 className="main-title fw-bold tx-dark">
-                  Compare our{" "}
+                  Compare our
                   <span className="position-relative d-inline-block">
-                    price{" "}
+                    price
                     <Image
                       width={193}
                       height={66}
                       src="/images/shape/shape_96.svg"
                       alt="icon"
                     />
-                  </span>{" "}
+                  </span>
                   <br /> with top hsoting provider
                 </h2>
               </div>
@@ -123,9 +123,9 @@ const PricingV3 = () => {
             <div className="col-xl-9 m-auto" data-aos="fade-up">
               <div className="title-style-seven text-center pb-120 lg-pb-50">
                 <h2 className="main-title fw-bold tx-dark">
-                  Got questions? <br /> Well, we&lsquo;ve got{" "}
+                  Got questions? <br /> Well, we&lsquo;ve got
                   <span className="position-relative d-inline-block">
-                    answers{" "}
+                    answers
                     <Image
                       width={305}
                       height={110}
@@ -134,7 +134,7 @@ const PricingV3 = () => {
                     />
                   </span>
                 </h2>
-              </div>{" "}
+              </div>
               {/* /.title-style-seven */}
             </div>
             {/* End col-xl-9 */}
@@ -155,7 +155,7 @@ const PricingV3 = () => {
               </div>
             </div>
           </div>
-        </div>{" "}
+        </div>
         {/* /.container */}
       </div>
       {/* /.fancy-feature-twentyFive */}

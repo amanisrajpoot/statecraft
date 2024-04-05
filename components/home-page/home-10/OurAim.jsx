@@ -99,7 +99,7 @@ const OurAim = () => {
               <img src={cardItem.imgSrc} alt="shape" className="lazy-img" />
             </div>
             <div className="name fs-18 fw-500 tx-dark mb-10">
-              - {cardItem.name},{" "}
+              - {cardItem.name},
               <span className="opacity-50">{cardItem.position}</span>
             </div>
             <p className="fs-18 m0">{cardItem.text}</p>

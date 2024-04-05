@@ -30,7 +30,7 @@ const Header3 = () => {
       }`}
     >
       <div className="notice-banner text-center">
-        It&lsquo;s the last day to save. The skills for now —{" "}
+        It&lsquo;s the last day to save. The skills for now —
         <a href="#" className="fw-500">
           now on sale.
         </a>
@@ -42,7 +42,7 @@ const Header3 = () => {
           <div className="logo order-lg-0">
             <Link href="/" className="logo order-lg-0">
               <Image
-                src="/images/logo/logo_07.png"
+                src="/images/logo/logo_01.png"
                 alt="logo"
                 width={95}
                 height={30}
@@ -83,7 +83,7 @@ const Header3 = () => {
             >
               Sign Up
             </Link>
-          </div>{" "}
+          </div>
           {/* /.right-widget */}
           <MainMenu />
         </div>

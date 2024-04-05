@@ -65,7 +65,7 @@ const CopyrightFooter = () => {
           </div>
           <div className="col-lg-4 order-lg-1 mt-15">
             <p className="copyright text-center m0">
-              Copyright © {new Date().getFullYear()}{" "}
+              Copyright © {new Date().getFullYear()}
               <a
                 style={{ color: "inherit" }}
                 href="https://themeforest.net/user/ib-themes"
@@ -73,7 +73,7 @@ const CopyrightFooter = () => {
                 rel="noopener noreferrer"
               >
                 ib-themes
-              </a>{" "}
+              </a>
               inc.
             </p>
           </div>

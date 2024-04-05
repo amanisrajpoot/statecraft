@@ -33,9 +33,9 @@ const FeaturesV2 = () => {
                 data-aos="fade-right"
               >
                 <h2 className="main-title fw-bold tx-dark">
-                  Premium{" "}
+                  Premium
                   <span className="position-relative d-inline-block">
-                    Hosting{" "}
+                    Hosting
                     <Image
                       width={269}
                       height={122}
@@ -98,7 +98,7 @@ const FeaturesV2 = () => {
                       src="/images/shape/shape_184.svg"
                       alt="shape"
                     />
-                  </span>{" "}
+                  </span>
                   Technology &amp; Great security
                 </h2>
               </div>
@@ -138,10 +138,10 @@ const FeaturesV2 = () => {
                       TRSUTED SECURITY
                     </div>
                     <h2 className="main-title tx-dark fw-bold">
-                      Security <br /> you can{" "}
+                      Security <br /> you can
                       <span className="d-inline-block position-relative">
                         trust
-                      </span>{" "}
+                      </span>
                       blindly.
                     </h2>
                   </div>
@@ -154,7 +154,7 @@ const FeaturesV2 = () => {
                     href="/pages-menu/about-us-v1"
                     className="btn-fifteen fw-500 position-relative d-inline-flex align-items-center"
                   >
-                    <span>Click here to learn more</span>{" "}
+                    <span>Click here to learn more</span>
                     <Image
                       width={23}
                       height={14}
@@ -203,9 +203,9 @@ const FeaturesV2 = () => {
                 data-aos="fade-up"
               >
                 <h2 className="main-title fw-bold tx-dark">
-                  7 Servers, Pick{" "}
+                  7 Servers, Pick
                   <span className="position-relative d-inline-block">
-                    one!{" "}
+                    one!
                     <Image
                       width={165}
                       height={99}
@@ -217,7 +217,7 @@ const FeaturesV2 = () => {
                 <p className="pt-20 fs-20">
                   You choose which Data Center you&apos;re provisioned in
                 </p>
-              </div>{" "}
+              </div>
               {/* /.title-style-seven */}
             </div>
           </div>

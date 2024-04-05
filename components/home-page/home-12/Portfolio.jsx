@@ -74,7 +74,7 @@ const Portfolio = () => {
                 {/* /.caption */}
               </div>
             </div>
-            {/* /.portfolio-block-two */}{" "}
+            {/* /.portfolio-block-two */}
             {item.videoUrl && (
               <ModalVideo
                 channel="youtube"

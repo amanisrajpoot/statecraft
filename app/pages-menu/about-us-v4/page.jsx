@@ -38,9 +38,9 @@ const AboutUsV4 = () => {
               >
                 <div className="sc-title">ABOUT US</div>
                 <h2 className="main-title font-recoleta fw-normal tx-dark">
-                  Our mission to make your business{" "}
+                  Our mission to make your business
                   <span className="position-relative">
-                    valuable{" "}
+                    valuable
                     <Image
                       width={302}
                       height={9}
@@ -78,7 +78,7 @@ const AboutUsV4 = () => {
         <div className="container">
           <div className="title-style-ten text-center" data-aos="fade-up">
             <h2 className="main-title font-recoleta fw-normal tx-dark">
-              Jano. The People{" "}
+              Jano. The People
               <span className="position-relative">
                 of Expert.
                 <Image
@@ -110,9 +110,9 @@ const AboutUsV4 = () => {
             <div className="row justify-content-center">
               <Block2 />
             </div>
-          </div>{" "}
+          </div>
           {/* /.card-wrapper */}
-        </div>{" "}
+        </div>
         {/* /.container */}
         <div className="wrapper mt-50 lg-mt-10">
           <div className="container">
@@ -120,7 +120,7 @@ const AboutUsV4 = () => {
               <CounterSection />
             </div>
           </div>
-        </div>{" "}
+        </div>
         {/* /.wrapper */}
         <Image
           width={130}
@@ -152,8 +152,7 @@ const AboutUsV4 = () => {
                   <h2 className="main-title font-recoleta fw-normal tx-dark">
                     What
                     <span className="position-relative">
-                      {" "}
-                      client{" "}
+                      client
                       <Image
                         width={100}
                         height={4}
@@ -199,9 +198,9 @@ const AboutUsV4 = () => {
           <div className="title-style-ten text-center" aos="fade-up">
             <div className="sc-title">FAQ</div>
             <h2 className="main-title font-recoleta fw-normal tx-dark">
-              Questions &amp;{" "}
+              Questions &amp;
               <span className="position-relative">
-                Answers{" "}
+                Answers
                 <Image
                   width={219}
                   height={7}
@@ -244,7 +243,7 @@ const AboutUsV4 = () => {
                 <h2 className="main-title font-recoleta fw-normal tx-dark">
                   Have Any Project? <br />
                   <span className="position-relative">
-                    Let’s Talk{" "}
+                    Let’s Talk
                     <Image
                       width={221}
                       height={7}

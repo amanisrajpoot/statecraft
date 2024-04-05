@@ -65,7 +65,6 @@ const LeadGeneration = () => {
                 <h2 className="main-title font-recoleta fw-normal tx-dark">
                   Get
                   <span className="position-relative">
-                    {" "}
                     Quality
                     <img src="/images/shape/shape_122.svg" alt="icon shape" />
                   </span>
@@ -137,7 +136,7 @@ const LeadGeneration = () => {
               <div className="title-style-ten">
                 <div className="sc-title">SUCCESS STORIES</div>
                 <h2 className="main-title font-recoleta fw-normal tx-dark">
-                  See success{" "}
+                  See success
                   <span className="position-relative">
                     stories <img src="/images/shape/shape_122.svg" alt="img" />
                   </span>
@@ -173,7 +172,6 @@ const LeadGeneration = () => {
                   <h2 className="main-title font-recoleta fw-normal tx-dark">
                     What
                     <span className="position-relative">
-                      {" "}
                       client <img src="/images/shape/shape_129.svg" alt="" />
                     </span>
                     think about us.
@@ -211,9 +209,9 @@ const LeadGeneration = () => {
           <div className="title-style-ten text-center" aos="fade-up">
             <div className="sc-title">FAQ</div>
             <h2 className="main-title font-recoleta fw-normal tx-dark">
-              Questions &amp;{" "}
+              Questions &amp;
               <span className="position-relative">
-                Answers{" "}
+                Answers
                 <Image
                   width={219}
                   height={7}
@@ -256,7 +254,7 @@ const LeadGeneration = () => {
                 <h2 className="main-title font-recoleta fw-normal tx-dark">
                   Have Any Project? <br />
                   <span className="position-relative">
-                    Let’s Talk{" "}
+                    Let’s Talk
                     <Image
                       width={221}
                       height={7}

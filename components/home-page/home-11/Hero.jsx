@@ -43,7 +43,7 @@ const Hero = () => {
           </button>
         </form>
         <p className="m0 pt-10 fw-500 tx-dark fs-15">
-          Already using janu?{" "}
+          Already using janu?
           <Link href="/login" className="text-decoration-underline">
             Sign in.
           </Link>

@@ -103,7 +103,7 @@ const FeedbackSlider = () => {
                 className="avatar rounded-circle"
               />
               <h6 className="name fs-20 fw-500 m0 ps-4">
-                {item.name}{" "}
+                {item.name}
                 <span className="d-block fw-normal">{item.location}</span>
               </h6>
               <img

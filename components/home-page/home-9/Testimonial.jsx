@@ -83,7 +83,6 @@ const Testimonial = () => {
               <h6 className="name fs-20 fw-500 m0 tx-dark">
                 {testimonial.name}
                 <span className="fw-normal opacity-50 fs-16">
-                  {" "}
                   {testimonial.location}
                 </span>
               </h6>

@@ -81,7 +81,7 @@ const AppBanner = () => {
             alt=""
             className="lazy-img shapes shape-two"
           />
-        </div>{" "}
+        </div>
         {/* /.illustration-holder */}
       </div>
     </div>

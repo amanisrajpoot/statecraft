@@ -30,7 +30,7 @@ const ContactV4 = () => {
               >
                 <div className="sc-title">CONTACT US</div>
                 <h2 className="main-title font-recoleta fw-normal tx-dark">
-                  Our{" "}
+                  Our
                   <span className="position-relative">
                     team <img src="/images/shape/shape_186.svg" alt="icon" />
                   </span>

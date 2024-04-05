@@ -20,7 +20,7 @@ const OurMission = () => {
               that helps you learn quickly.
             </p>
             <h6 className="tx-dark fs-20">
-              - Mike Lucas.{" "}
+              - Mike Lucas.
               <span className="fs-18 fw-normal opacity-50">
                 CEO &amp; Founder Jano
               </span>
@@ -62,7 +62,7 @@ const OurMission = () => {
                   <div className="fs-18 tx-dark">Rating</div>
                 </div>
                 {/* /.rating */}
-              </div>{" "}
+              </div>
               {/* /.img-meta */}
             </div>
           </div>
@@ -99,7 +99,7 @@ const OurMission = () => {
             >
               <div className="fw-500 tx-dark amount">32k</div>
               <div className="fs-18 tx-dark">Customer</div>
-            </div>{" "}
+            </div>
             {/* /.customer-data */}
           </div>
         </div>

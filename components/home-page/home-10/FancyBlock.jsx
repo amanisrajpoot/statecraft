@@ -57,7 +57,7 @@ const FancyBlock = () => {
             {data.subtitle}
           </p>
           <div className="name fs-20 tx-dark fw-500">
-            - {data.author},{" "}
+            - {data.author},
             <span className="opacity-25">{data.authorTitle}</span>
           </div>
         </div>

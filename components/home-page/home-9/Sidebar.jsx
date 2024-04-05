@@ -77,7 +77,7 @@ const Sidebar = () => {
       </ul>
 
       <p className="pt-10 fs-15">
-        Copyright © {new Date().getFullYear()}{" "}
+        Copyright © {new Date().getFullYear()}
         <a
           style={{ color: "inherit" }}
           href="https://themeforest.net/user/ib-themes"
@@ -85,7 +85,7 @@ const Sidebar = () => {
           rel="noopener noreferrer"
         >
           ib-themes
-        </a>{" "}
+        </a>
         inc.
       </p>
     </div>

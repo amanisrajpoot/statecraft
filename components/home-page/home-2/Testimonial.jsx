@@ -38,7 +38,7 @@ const Testimonial = () => {
                     {testimonial.quote}
                   </p>
                   <h4 className="text-white d-inline-block position-relative">
-                    {testimonial.author}{" "}
+                    {testimonial.author}
                     <span className="fw-light">{testimonial.location}</span>
                   </h4>
                 </div>

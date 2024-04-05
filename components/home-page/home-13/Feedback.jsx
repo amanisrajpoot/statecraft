@@ -56,14 +56,14 @@ const Feedback = () => {
                   <h6 className="fw-normal fs-20 d-inline-block fst-italic position-relative ps-4">
                     Jessica Woodbeck, CEO
                   </h6>
-                </div>{" "}
+                </div>
                 {/* /.feedback-block-eight */}
               </div>
-            </div>{" "}
+            </div>
             {/* /.feedback_slider_eight */}
           </div>
         </div>
-      </div>{" "}
+      </div>
       {/* /.container */}
       {images.map((image, index) => (
         <img

@@ -128,7 +128,7 @@ const Testimonial = () => {
                     </div>
                     <p className="text-lg pt-35 pb-20">{item.text}</p>
                     <h6>
-                      {item.author},{" "}
+                      {item.author},
                       <span className="opacity-25">{item.country}</span>
                     </h6>
                   </div>

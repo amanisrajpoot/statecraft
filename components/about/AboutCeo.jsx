@@ -119,9 +119,9 @@ const AboutCeo = () => {
             <p className="fs-18 m0">
               We aim to answer any quis query in a minute
             </p>
-          </div>{" "}
+          </div>
           {/* /.card-one */}
-        </div>{" "}
+        </div>
         {/* /.img-meta */}
       </div>
     </>
