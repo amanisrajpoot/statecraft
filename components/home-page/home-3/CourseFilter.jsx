@@ -58,10 +58,11 @@ const CourseFilter = () => {
       : courseData.filter((item) => item.tags.includes(filter));
 
   var settings = {
-    infinite: false,
-    autoplay: false,
+    dots: true,
+    infinite: true,
+    autoplay: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {
@@ -81,6 +82,7 @@ const CourseFilter = () => {
         breakpoint: 520,
         settings: {
           slidesToShow: 1,
+          dots: true,
         },
       },
     ],
@@ -161,10 +163,10 @@ const CourseFilter = () => {
           className="tab-content position-relative zn2 course_slider_one"
           data-aos="fade-up"
         >
-          <div className="d-flex">
-            {/* <Slider {...settings} arrows={false}> */}
+          <div className="row">
+            {/* <Slider {...settings}> */}
             {filteredItems.map((course) => (
-              <div className="item col-3" key={course.id}>
+              <div className="col-lg-3 col-md-4 col-sm-6 mb-4" key={course.id}>
                 <div className="card-style-twenty tran3s">
                   <div className="img-meta">
                     <Image
@@ -239,8 +241,8 @@ const CourseFilter = () => {
                 {/* /.card-style-twenty */}
               </div>
             ))}
+            {/* </Slider> */}
           </div>
-          {/* </Slider> */}
         </div>
         {/* /.tab-content */}
       </div>

@@ -1,12 +1,12 @@
 import DefaulHeader from "@/components/header/DefaulHeader";
 import DefaultFooter from "@/components/footer/DefaultFooter";
 import PortfolioTopTitle from "@/components/portfolio/PortfolioTopTitle";
-import PortfolioGallery6 from "@/components/courses/CourseDetails";
 import CallToAction from "@/components/portfolio/CallToAction";
+import CourseDetails from "@/components/courses/CourseDetails";
 export const metadata = {
   title: "Portfolio V6 || Jano - Creative Multipurpose React NextJS Template",
 };
-const PortfolioV5 = () => {
+const Courses = () => {
   return (
     <>
       {/* <!-- 
@@ -28,14 +28,14 @@ const PortfolioV5 = () => {
         Portfolio Gallery six
         ============================================== 
         --> */}
-      <PortfolioGallery6 />
+      <CourseDetails />
 
       {/*
 			=====================================================
 				Fancy Short Banner Twelve
 			=====================================================
 			*/}
-      <CallToAction />
+      {/* <CallToAction /> */}
 
       {/* 
         =============================================
@@ -47,4 +47,4 @@ const PortfolioV5 = () => {
   );
 };
 
-export default PortfolioV5;
+export default Courses;
