@@ -19,7 +19,7 @@ import HeroCorousel from "@/components/home-page/home-3/HeroCorousel";
 import FeatureBlockHeader from "@/components/home-page/home-3/FeatureBlockHeader";
 
 export const metadata = {
-  title: "Education || Jano - Creative Multipurpose React NextJS Template",
+  title: "Statecraft - Crafting the path of future..",
 };
 
 const education = () => {

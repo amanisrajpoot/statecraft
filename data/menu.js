@@ -1,5 +1,18 @@
 export const menuItems = [
   {
+    title: "About",
+    items: [
+      { title: "About Us", link: "/pages-menu/about-us-v3" },
+      { title: "Chief Advisor and Chief Mentor's Message", link: "/home/web-hosting" },
+      { title: "Director and Founder's Message", link: "/home/education" },
+      { title: "CEO & Co-Founder's Message", link: "/home/charity" },
+    ],
+  },
+  
+];
+
+export const menuItemsBak = [
+  {
     title: "Business",
     items: [
       { title: "Insurance", link: "/" },

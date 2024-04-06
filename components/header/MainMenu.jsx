@@ -1,4 +1,4 @@
-"use client";
+//"use client";
 
 import Link from "next/link";
 import {
@@ -50,7 +50,7 @@ const MainMenu = () => {
           </li>
           {/* End li */}
 
-          <li className="nav-item dropdown mega-dropdown-md">
+          <li className="nav-item dropdown">
             <a
               // className="nav-link dropdown-toggle active-menu"
               href="#"
@@ -68,13 +68,13 @@ const MainMenu = () => {
 
               // style={{color:'green'}}
             >
-              Home
+              About
             </a>
-            <ul className="dropdown-menu">
+            <ul className="dropdown-menu" style={{ minWidth: "500px" }}>
               <li>
                 <div className="row">
                   {menuItems.map((menu, index) => (
-                    <div className="col-lg-4" key={index}>
+                    <div className="" key={index}>
                       <div className="menu-column">
                         <h6
                           className={
