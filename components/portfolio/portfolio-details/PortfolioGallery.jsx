@@ -25,11 +25,11 @@ const images = [
   },
 ];
 
-const PortfolioGallery = () => {
+const PortfolioGallery = ({ images }) => {
   return (
     <>
       <Gallery>
-        {images.map((image, index) => (
+        {images?.map((image, index) => (
           <div
             className={`col-12 ${index === 2 ? "" : "col-sm-6"}`}
             key={index}
