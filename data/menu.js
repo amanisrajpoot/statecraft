@@ -8,6 +8,16 @@ export const menuItems = [
   
 ];
 
+export const courseItems = [
+  {
+    title: "Courses",
+    items: [
+      { title: "All courses", link: "/courses" },
+    ],
+  },
+  
+];
+
 export const menuItemsBak = [
   {
     title: "Business",
