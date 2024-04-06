@@ -70,7 +70,7 @@ const MainMenu = () => {
             >
               About
             </a>
-            <ul className="dropdown-menu" style={{ minWidth: "500px" }}>
+            <ul className="dropdown-menu" >
               <li>
                 <div className="row">
                   {menuItems.map((menu, index) => (
@@ -83,7 +83,7 @@ const MainMenu = () => {
                               : "mega-menu-title"
                           }
                         >
-                          {menu.title}
+                          {/* {menu.title} */}
                         </h6>
                         <ul className="style-none mega-dropdown-list">
                           {menu.items.map((item, index) => (

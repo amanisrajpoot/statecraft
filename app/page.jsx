@@ -1,6 +1,6 @@
 import Education from "./home/education/page";
 export const metadata = {
-  title: "Insurance || Jano - Creative Multipurpose React NextJS Template",
+  title: "StateCraft || Crafting the path to success.",
 };
 const MainRoot = () => {
   return <Education />;
