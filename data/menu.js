@@ -1,22 +1,8 @@
-export const menuItems = [
-  {
-    title: "About",
-    items: [
-      { title: "About Us", link: "/pages-menu/about-us" },
-    ],
-  },
-  
-];
+export const menuItems = [{ name: "About Us", link: "/pages-menu/about-us" }];
 
-export const courseItems = [
-  {
-    title: "Courses",
-    items: [
-      { title: "All courses", link: "/courses" },
-    ],
-  },
-  
-];
+export const courseItems = [{ name: "All courses", link: "/courses" }];
+
+export const downloadItems = [{ name: "Downloads", link: "/downloads" }];
 
 export const menuItemsBak = [
   {

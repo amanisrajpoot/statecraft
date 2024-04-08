@@ -21,7 +21,7 @@ const courseData = [
     description: "Prelims Cum Mains Foundation(2025)",
     duration: "15 months",
     title: "Foundation Program",
-    rating: 5,
+    difficulty: 5,
     ratingsCount: 310,
     coursePrice: [
       { price: 97750, discountedPrice: 115000, title: "Offline" },
@@ -36,7 +36,7 @@ const courseData = [
     description: "UPSC Interview Guidance Program",
     duration: "15 months",
     title: "UPSC Interview Guidance Program",
-    rating: 5,
+    difficulty: 5,
     ratingsCount: 310,
     coursePrice: [
       { price: 97750, discountedPrice: 115000, title: "Offline" },
@@ -65,7 +65,7 @@ const courseData = [
     description: "3 Day Crash Course | KPSC KAS Prelims Batch",
     duration: "3 Days",
     title: "3 Day Crash Course",
-    rating: 5,
+    difficulty: 5,
     ratingsCount: 310,
     coursePrice: [
       { price: 1500, discountedPrice: 3000, title: "Offline" },
@@ -107,7 +107,7 @@ const courseData = [
     description: "Focus 40 | KPSC KAS Prelims Batch",
     duration: "40 Days",
     title: "Focus 40",
-    rating: 5,
+    difficulty: 5,
     ratingsCount: 310,
     coursePrice: [
       { price: 10500, discountedPrice: 21000, title: "Offline" },

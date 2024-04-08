@@ -1,8 +1,8 @@
 import DefaulHeader from "@/components/header/DefaulHeader";
 import DefaultFooter from "@/components/footer/DefaultFooter";
-import PortfolioTopTitle from "@/components/portfolio/PortfolioTopTitle";
 import CallToAction from "@/components/portfolio/CallToAction";
 import CourseDetails from "@/components/courses/CourseDetails";
+import MenuTopTitle from "@/components/header/menuTopTitle";
 export const metadata = {
   title: "Portfolio V6 || Jano - Creative Multipurpose React NextJS Template",
 };
@@ -21,7 +21,10 @@ const Courses = () => {
         Feature Section Fifty One
         ============================================== 
         */}
-      <PortfolioTopTitle />
+      <MenuTopTitle
+        title={"All Courses"}
+        description={"Check out our Courses."}
+      />
 
       {/* <!-- 
         =============================================

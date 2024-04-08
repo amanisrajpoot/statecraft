@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
+import Link from "next/link";
 
 const courseData = [
   {
@@ -11,7 +12,7 @@ const courseData = [
     description: "Prelims Cum Mains Foundation(2025)",
     duration: "15 months",
     title: "Foundation Program",
-    rating: 5,
+    difficulty: 5,
     ratingsCount: 310,
     coursePrice: [
       { price: 97750, discountedPrice: 115000, title: "Offline" },
@@ -25,7 +26,7 @@ const courseData = [
     description: "Prelims Foundation(2025)",
     duration: "15 months",
     title: "Prelims",
-    rating: 5,
+    difficulty: 5,
     ratingsCount: 310,
     coursePrice: [
       { price: 97750, discountedPrice: 115000, title: "Offline" },
@@ -39,7 +40,7 @@ const courseData = [
     description: "Mains Foundation(2025)",
     duration: "15 months",
     title: "Mains",
-    rating: 5,
+    difficulty: 5,
     ratingsCount: 310,
     coursePrice: [
       { price: 97750, discountedPrice: 115000, title: "Offline" },
@@ -179,9 +180,12 @@ const CourseFilter = () => {
                   </div>
                   {/* /.img-meta */}
                   <div className="course-data">
-                    <a href="#" className="course-title fw-500">
+                    <Link
+                      href={`courses/${course?.id}`}
+                      className="course-title fw-500"
+                    >
                       {course.title}
-                    </a>
+                    </Link>
                     <div className="d-flex align-items-center justify-  ">
                       <div className="course-by fs-12 tx-dark opacity-75">
                         {course.description}
@@ -194,16 +198,19 @@ const CourseFilter = () => {
                     </div>
                     <div className="course-review d-flex align-items-center mt-5">
                       <ul className="style-none d-flex rating">
-                        {Array.from({ length: course.rating }, (_, i) => (
+                        {Array.from({ length: course.difficulty }, (_, i) => (
                           <li className="active" key={i}>
                             <i className="bi bi-star-fill" />
                           </li>
                         ))}
-                        {Array.from({ length: 5 - course.rating }, (_, i) => (
-                          <li key={i}>
-                            <i className="bi bi-star-fill" />
-                          </li>
-                        ))}
+                        {Array.from(
+                          { length: 5 - course.difficulty },
+                          (_, i) => (
+                            <li key={i}>
+                              <i className="bi bi-star-fill" />
+                            </li>
+                          )
+                        )}
                       </ul>
                       <span className="fs-15 tx-dark ms-1">
                         ({course.ratingsCount})

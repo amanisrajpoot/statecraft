@@ -19,20 +19,20 @@ const ProjectDetails = ({ details }) => {
         <div className="pt-title fw-bold tx-dark text-uppercase">Rating</div>
         <div className="pj-title course-review d-flex align-items-center mt-5">
           <ul className="style-none d-flex rating">
-            {Array.from({ length: details.rating }, (_, i) => (
+            {Array.from({ length: details.difficulty }, (_, i) => (
               <li className="active" key={i}>
                 <i className="bi bi-star-fill" />
               </li>
             ))}
-            {Array.from({ length: 5 - details.rating }, (_, i) => (
+            {Array.from({ length: 5 - details.difficulty }, (_, i) => (
               <li key={i}>
                 <i className="bi bi-star-fill" />
               </li>
             ))}
           </ul>
-          <span className="pj-title fs-15 tx-dark ms-1">
+          {/* <span className="pj-title fs-15 tx-dark ms-1">
             ({details.ratingsCount})
-          </span>
+          </span> */}
         </div>
       </div>
       {/* End .col-12 */}
