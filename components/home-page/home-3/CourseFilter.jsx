@@ -115,7 +115,7 @@ const CourseFilter = () => {
           <li className="nav-item">
             <button
               className={filter === "kpsc" ? "active nav-link" : "nav-link"}
-              onClick={() => setFilter("it")}
+              onClick={() => setFilter("kpsc")}
             >
               KPSC
             </button>
@@ -123,7 +123,7 @@ const CourseFilter = () => {
           <li className="nav-item">
             <button
               className={filter === "prelims" ? "active nav-link" : "nav-link"}
-              onClick={() => setFilter("language")}
+              onClick={() => setFilter("prelims")}
             >
               Prelims
             </button>
@@ -131,7 +131,7 @@ const CourseFilter = () => {
           <li className="nav-item">
             <button
               className={filter === "mains" ? "active nav-link" : "nav-link"}
-              onClick={() => setFilter("coding")}
+              onClick={() => setFilter("mains")}
             >
               Mains
             </button>

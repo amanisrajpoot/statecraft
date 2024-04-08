@@ -23,14 +23,14 @@ const Hero = () => {
           <div className="col-md-6">
             <div className="text-wrapper" data-aos="fade-right">
               <h1 className="hero-heading fw-500 tx-dark" style={{fontSize:"3rem"}}>
-                Congratulations to all successful Candidates
+                You're just one step away from choosing the path to success..
               </h1>
               <p className="text-lg tx-dark mb-30 pt-35 lg-pt-20 lg-mb-20">
                 India's Top Coaching Institute for UPSC CSE
               </p>
               <div className="d-lg-flex align-items-center">
                 <a
-                  href="#"
+                  href="/courses"
                   className="btn-twentyFour fw-500 position-relative d-inline-flex align-items-center me-5 mt-30"
                 >
                   <span>Explore all Courses</span>

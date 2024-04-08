@@ -9,7 +9,7 @@ const PortfolioTopTitle = () => {
                 All Courses
               </div>
               <h2 className="main-title fw-500 tx-dark">
-                Check out our Latest Courses.
+                Check out our Courses.
               </h2>
             </div>
           </div>

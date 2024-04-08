@@ -7,22 +7,22 @@ import { useInView } from "react-intersection-observer";
 const data = [
   {
     count: 0.35,
-    label: "Job done successfully",
+    label: "Hours of lecture given",
     unit: "k",
     delay: "100",
     factor: 10, // Adjust this factor based on your precision needs
   },
   {
-    count: 20,
-    label: "3,280 avg rating",
-    unit: "billion",
+    count: 4.8,
+    label: "3,280 ratings given",
+    unit: <i className="bi bi-star-fill" />,
     delay: "200",
     factor: 1,
   },
   {
-    count: 30,
-    label: "Volunteer",
-    unit: "k+",
+    count: 10,
+    label: "Trusted Educators",
+    unit: "+",
     delay: "300",
     factor: 1,
   },

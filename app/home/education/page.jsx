@@ -116,7 +116,7 @@ const education = () => {
           <div className="wrapper position-relative">
             <div className="title-style-one mb-30">
               <h2 className="main-title fw-500 tx-dark m0">
-                Features of Course
+                Featured Courses
               </h2>
             </div>
             <CourseFilter />

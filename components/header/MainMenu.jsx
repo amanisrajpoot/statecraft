@@ -3,6 +3,7 @@
 import Link from "next/link";
 import {
   menuItems,
+  courseItems,
   pagesItems,
   portfolioItems,
   blogItems,
@@ -70,7 +71,7 @@ const MainMenu = () => {
             >
               About
             </a>
-            <ul className="dropdown-menu" style={{ minWidth: "500px" }}>
+            <ul className="dropdown-menu" >
               <li>
                 <div className="row">
                   {menuItems.map((menu, index) => (
@@ -83,7 +84,7 @@ const MainMenu = () => {
                               : "mega-menu-title"
                           }
                         >
-                          {menu.title}
+                          {/* {menu.title} */}
                         </h6>
                         <ul className="style-none mega-dropdown-list">
                           {menu.items.map((item, index) => (
@@ -107,6 +108,63 @@ const MainMenu = () => {
             </ul>
           </li>
           {/* End li (home mega menu) */}
+
+          <li className="nav-item dropdown">
+            <a
+              // className="nav-link dropdown-toggle active-menu"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"
+              aria-expanded="false"
+              className={
+                menuItems.some((menu) =>
+                  menu.items.some((elm) => isActive(elm.link))
+                )
+                  ? "nav-link dropdown-toggle active-menu"
+                  : "nav-link dropdown-toggle"
+              }
+
+              // style={{color:'green'}}
+            >
+              Courses
+            </a>
+            <ul className="dropdown-menu" >
+              <li>
+                <div className="row">
+                  {courseItems.map((menu, index) => (
+                    <div className="" key={index}>
+                      <div className="menu-column">
+                        <h6
+                          className={
+                            menu.items.some((elm) => isActive(elm.link))
+                              ? "mega-menu-title active-menu"
+                              : "mega-menu-title"
+                          }
+                        >
+                          {/* {menu.title} */}
+                        </h6>
+                        <ul className="style-none mega-dropdown-list">
+                          {menu.items.map((item, index) => (
+                            <li key={index}>
+                              <Link
+                                href={item.link}
+                                className={`dropdown-item ${
+                                  isActive(item.link) ? "active" : ""
+                                }`}
+                              >
+                                <span>{item.title}</span>
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </li>
+            </ul>
+          </li>
 
           <li className="nav-item  dropdown">
             <a
