@@ -53,14 +53,12 @@ const MainMenu = () => {
           </li>
           {/* End li */}
 
+          {/* About */}
           <li className="nav-item dropdown">
             <a
-              // className="nav-link dropdown-toggle"
-              className={
-                menuItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle active-menu"
-                  : "nav-link dropdown-toggle"
-              }
+              className={menuItems.some((menu) =>
+                menu.subItems?.some((elm) => isActive(elm.link))
+              ) ? "nav-link dropdown-toggle active-menu" : "nav-link dropdown-toggle"}
               href="#"
               role="button"
               data-bs-toggle="dropdown"
@@ -71,29 +69,41 @@ const MainMenu = () => {
             </a>
             <ul className="dropdown-menu">
               {menuItems.map((item, index) => (
-                <li key={index}>
-                  <Link
-                    href={item.link}
-                    className={`dropdown-item ${
-                      isActive(item.link) ? "active" : ""
-                    }`}
+                <li className={item.isSubmenu ? "dropdown-submenu dropdown" : ""} key={index}>
+                  <a
+                    className={item.isSubmenu ? "dropdown-item dropdown-toggle" : isActive(item.link) ? "dropdown-item active" : "dropdown-item"}
+                    href={item.isSubmenu ? "#" : item.link}
+                    data-bs-toggle={item.isSubmenu ? "dropdown" : undefined}
+                    data-bs-auto-close={item.isSubmenu ? "outside" : undefined}
+                    aria-expanded={item.isSubmenu ? "false" : undefined}
                   >
-                    <span>{item.name}</span>
-                  </Link>
+                    <span>{item.title}</span>
+                  </a>
+                  {item.isSubmenu && (
+                    <ul className="dropdown-menu">
+                      {item.subItems?.map((subMenu, i) => (
+                        <li key={i}>
+                          <Link
+                            href={subMenu.link}
+                            className={`dropdown-item ${isActive(subMenu.link) ? "active" : ""}`}
+                          >
+                            <span>{subMenu.title}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </li>
               ))}
             </ul>
           </li>
-          {/* End li (About) */}
-
+          
+          {/* Courses */}
           <li className="nav-item dropdown">
             <a
-              // className="nav-link dropdown-toggle"
-              className={
-                courseItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle active-menu"
-                  : "nav-link dropdown-toggle"
-              }
+              className={courseItems.some((menu) =>
+                menu.subItems?.some((elm) => isActive(elm.link))
+              ) ? "nav-link dropdown-toggle active-menu" : "nav-link dropdown-toggle"}
               href="#"
               role="button"
               data-bs-toggle="dropdown"
@@ -104,15 +114,30 @@ const MainMenu = () => {
             </a>
             <ul className="dropdown-menu">
               {courseItems.map((item, index) => (
-                <li key={index}>
-                  <Link
-                    href={item.link}
-                    className={`dropdown-item ${
-                      isActive(item.link) ? "active" : ""
-                    }`}
+                <li className={item.isSubmenu ? "dropdown-submenu dropdown" : ""} key={index}>
+                  <a
+                    className={item.isSubmenu ? "dropdown-item dropdown-toggle" : isActive(item.link) ? "dropdown-item active" : "dropdown-item"}
+                    href={item.isSubmenu ? "#" : item.link}
+                    data-bs-toggle={item.isSubmenu ? "dropdown" : undefined}
+                    data-bs-auto-close={item.isSubmenu ? "outside" : undefined}
+                    aria-expanded={item.isSubmenu ? "false" : undefined}
                   >
-                    <span>{item.name}</span>
-                  </Link>
+                    <span>{item.title}</span>
+                  </a>
+                  {item.isSubmenu && (
+                    <ul className="dropdown-menu">
+                      {item.subItems?.map((subMenu, i) => (
+                        <li key={i}>
+                          <Link
+                            href={subMenu.link}
+                            className={`dropdown-item ${isActive(subMenu.link) ? "active" : ""}`}
+                          >
+                            <span>{subMenu.title}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </li>
               ))}
             </ul>
@@ -176,7 +201,7 @@ const MainMenu = () => {
           </li>
           {/* End li (pages) */}
 
-          <li className="nav-item dropdown">
+          {/* <li className="nav-item dropdown">
             <a
               // className="nav-link dropdown-toggle"
               className={
@@ -206,7 +231,7 @@ const MainMenu = () => {
                 </li>
               ))}
             </ul>
-          </li>
+          </li> */}
           {/* End li (portfolio) */}
 
           <li className="nav-item dropdown">
@@ -223,7 +248,7 @@ const MainMenu = () => {
               data-bs-auto-close="outside"
               aria-expanded="false"
             >
-              Blog
+              Study Material
             </a>
             <ul className="dropdown-menu">
               {blogItems.map((blog, index) => (
@@ -242,35 +267,13 @@ const MainMenu = () => {
           </li>
           {/* End li (blog) */}
 
-          <li className="nav-item dropdown">
-            <a
-              className={
-                contactItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle active-menu"
-                  : "nav-link dropdown-toggle"
-              }
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              data-bs-auto-close="outside"
-              aria-expanded="false"
+          <li className="nav-item">
+            <Link
+              href="/contact/contact-v2"
+              className={`nav-link ${isActive("/contact/contact-v2") ? "active" : ""}`}
             >
               Contact
-            </a>
-            <ul className="dropdown-menu">
-              {contactItems.map((contact, index) => (
-                <li key={index}>
-                  <Link
-                    href={contact.link}
-                    className={`dropdown-item ${
-                      isActive(contact.link) ? "active" : ""
-                    }`}
-                  >
-                    <span>{contact.text}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            </Link>
           </li>
           {/* End li (contact) */}
 
@@ -313,7 +316,7 @@ const MainMenu = () => {
         <div className="mobile-content d-block d-lg-none">
           <div className="d-flex flex-column align-items-center justify-content-center mt-70">
             <Link
-              href="/contact/contact-v1"
+              href="/contact/contact-v2"
               className="btn-twentyOne fw-500 tran3s"
             >
               Contact us

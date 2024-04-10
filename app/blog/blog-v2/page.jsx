@@ -34,7 +34,7 @@ const GridWithSidebar = () => {
                   Blog
                 </div>
                 <h2 className="main-title fw-500 tx-dark">
-                  Check our inside news &amp; update.
+                  Check our Current Affairs Date Wise.
                 </h2>
               </div>
             </div>

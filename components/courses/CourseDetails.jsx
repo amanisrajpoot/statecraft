@@ -57,23 +57,6 @@ const CourseDetails = () => {
     {
       id: 4,
       imgSrc: "/images/assets/featureCourses4.jpg",
-      description: "Focus 60 | KPSC KAS Prelims Batch",
-      duration: "60 Days",
-      title: "Focus 60",
-      difficulty: 3,
-      ratingsCount: 310,
-      coursePrice: [
-        { price: 10500, discountedPrice: 21000, title: "Offline" },
-        { price: 10500, discountedPrice: 21000, title: "Online" },
-      ],
-      tags: ["kpsc"],
-      classes: "60 mins",
-      limitedSeats: "40",
-      totalTests: "40",
-    },
-    {
-      id: 5,
-      imgSrc: "/images/assets/featureCourses4.jpg",
       description: "Focus 40 | KPSC KAS Prelims Batch",
       duration: "40 Days",
       title: "Focus 40",
@@ -87,6 +70,23 @@ const CourseDetails = () => {
       classes: "40 mins",
       limitedSeats: "40",
       totalTests: "40",
+    },
+    {
+      id: 5,
+      imgSrc: "/images/assets/featureCourses4.jpg",
+      description: "Focus 60 | KPSC KAS Prelims Batch",
+      duration: "60 Days",
+      title: "Focus 60",
+      difficulty: 3,
+      ratingsCount: 310,
+      coursePrice: [
+        { price: 10500, discountedPrice: 21000, title: "Offline" },
+        { price: 10500, discountedPrice: 21000, title: "Online" },
+      ],
+      tags: ["kpsc"],
+      classes: "60 mins",
+      limitedSeats: "60",
+      totalTests: "60",
     },
   ];
 

@@ -34,7 +34,7 @@ const ListWithSidebar = () => {
                   Blog
                 </div>
                 <h2 className="main-title fw-500 tx-dark">
-                  Check our inside news &amp; update.
+                  Check our upto date Editorials.
                 </h2>
               </div>
             </div>

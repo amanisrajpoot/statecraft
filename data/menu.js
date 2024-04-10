@@ -1,6 +1,52 @@
-export const menuItems = [{ name: "About Us", link: "/pages-menu/about-us" }];
+export const menuItems = [
+  {
+    title: "About Us",
+    link: "/pages-menu/about-us",
+    isSubmenu: false,
+  },
+  {
+    title: "UPSC",
+    subItems: [
+      { title: "About UPSC", link: "/pages-menu/about-us-v2" },
+      { title: "UPSC Prelims Syllabus", link: "/pages-menu/about-us-v2" },
+      { title: "UPSC Mains Syllabus", link: "/pages-menu/about-us-v2" },
+    ],
+    isSubmenu: true,
+  },
+  {
+    title: "KPSC Courses",
+    subItems: [
+      { title: "About KPSC", link: "/pages-menu/about-us-v2" },
+      { title: "KPSC Prelims Syllabus", link: "/pages-menu/about-us-v2" },
+      { title: "KPSC Mains Syllabus", link: "/pages-menu/about-us-v2" },
+    ],
+    isSubmenu: true,
+  },
+];
 
-export const courseItems = [{ name: "All courses", link: "/courses" }];
+export const courseItems = [
+  {
+    title: "All Courses",
+    link: "/courses",
+    isSubmenu: false,
+  },
+  {
+    title: "UPSC Courses",
+    subItems: [
+      { title: "Interview Preparation", link: "/courses/2" },
+    ],
+    isSubmenu: true,
+  },
+  {
+    title: "KPSC Courses",
+    subItems: [
+      { title: "3 Days Crash Course", link: "/courses/3" },
+      { title: "Focus 40", link: "/courses/4" },
+      { title: "Focus 60", link: "/courses/5" },
+    ],
+    isSubmenu: true,
+  },
+];
 
 export const downloadItems = [];
 
@@ -107,10 +153,8 @@ export const portfolioItems = [
 ];
 
 export const blogItems = [
-  { link: "/blog/blog-v1", text: "List With sidebar" },
-  { link: "/blog/blog-v2", text: "Grid With sidebar" },
-  { link: "/blog/blog-v3", text: "Grid Layout" },
-  { link: "/blog/1", text: "Blog Details" },
+  { link: "/blog/blog-v1", text: "Editorial" },
+  { link: "/blog/blog-v2", text: "Current Affair" },
 ];
 export const contactItems = [
   { link: "/contact/contact-v1", text: "Contact - Insurance" },
