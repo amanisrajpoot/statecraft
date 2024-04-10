@@ -5,26 +5,24 @@ import items from "@/data/portfolio";
 import Link from "next/link";
 import Image from "next/image";
 
-const DownloadDetails = ({ downloadData, buttonStatus }) => {
+const DownloadDetails = ({ downloadData }) => {
   //   const [filter, setFilter] = useState("*");
 
   return (
     <div className="portfolio-gallery-five pt-30">
       <div className="container">
         <ul className="style-none text-center isotop-menu-wrapper g-control-nav-two">
-          {buttonStatus && (
-            <Link
-              href={
-                "https://drive.google.com/drive/folders/1RjbmfKHyviJF48MGLqQlvdH2TLDNU8Yz"
-              }
-              className="btn-twentyExtra fw-500 tran3s"
-              data-aos="fade-up"
-              data-aos-delay="300"
-              target="_blank"
-            >
-              <li>All Downloads</li>
-            </Link>
-          )}
+          <Link
+            href={
+              "https://drive.google.com/drive/folders/1RjbmfKHyviJF48MGLqQlvdH2TLDNU8Yz"
+            }
+            className="btn-twentyExtra fw-500 tran3s"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            target="_blank"
+          >
+            <li>All Downloads</li>
+          </Link>
           {/* <li
             className={filter === "marketing" ? "is-checked" : ""}
             onClick={() => setFilter("marketing")}

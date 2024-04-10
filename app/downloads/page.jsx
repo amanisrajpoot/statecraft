@@ -85,7 +85,7 @@ const Downloads = () => {
         Portfolio Gallery Three
         ============================================== 
         --> */}
-      <DownloadDetails downloadData={downloadData} />
+      <DownloadDetails downloadData={downloadData} buttonStatus={true} />
 
       {/* 
         =============================================

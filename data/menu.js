@@ -2,7 +2,12 @@ export const menuItems = [{ name: "About Us", link: "/pages-menu/about-us" }];
 
 export const courseItems = [{ name: "All courses", link: "/courses" }];
 
-export const downloadItems = [{ name: "Downloads", link: "/downloads" }];
+export const downloadItems = [];
+
+export const moreItems = [
+  { name: "Downloads", link: "/downloads" },
+  { name: "Infographics", link: "/infographics" },
+];
 
 export const menuItemsBak = [
   {

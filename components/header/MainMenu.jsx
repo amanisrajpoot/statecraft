@@ -9,6 +9,7 @@ import {
   portfolioItems,
   blogItems,
   contactItems,
+  moreItems,
 } from "@/data/menu";
 
 import Image from "next/image";
@@ -117,39 +118,6 @@ const MainMenu = () => {
             </ul>
           </li>
           {/* End li (Courses) */}
-
-          <li className="nav-item dropdown">
-            <a
-              // className="nav-link dropdown-toggle"
-              className={
-                downloadItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle active-menu"
-                  : "nav-link dropdown-toggle"
-              }
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              data-bs-auto-close="outside"
-              aria-expanded="false"
-            >
-              Downloads
-            </a>
-            <ul className="dropdown-menu">
-              {downloadItems.map((item, index) => (
-                <li key={index}>
-                  <Link
-                    href={item.link}
-                    className={`dropdown-item ${
-                      isActive(item.link) ? "active" : ""
-                    }`}
-                  >
-                    <span>{item.name}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </li>
-          {/* End li (downloads) */}
 
           <li className="nav-item  dropdown">
             <a
@@ -305,6 +273,39 @@ const MainMenu = () => {
             </ul>
           </li>
           {/* End li (contact) */}
+
+          <li className="nav-item dropdown">
+            <a
+              // className="nav-link dropdown-toggle"
+              className={
+                moreItems.some((elm) => isActive(elm.link))
+                  ? "nav-link dropdown-toggle active-menu"
+                  : "nav-link dropdown-toggle"
+              }
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"
+              aria-expanded="false"
+            >
+              More
+            </a>
+            <ul className="dropdown-menu">
+              {moreItems.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    href={item.link}
+                    className={`dropdown-item ${
+                      isActive(item.link) ? "active" : ""
+                    }`}
+                  >
+                    <span>{item.name}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </li>
+          {/* End li (More) */}
         </ul>
         {/* End ul */}
 
