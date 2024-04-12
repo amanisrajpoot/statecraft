@@ -14,7 +14,7 @@ const CallToActions = () => {
                   <div className="title-style-two">
                     <div className="sc-title fw-500 ">Subscirbe Now</div>
                     <h4 className="main-title fw-bold tx-dark">
-                      New user? Start your free trial now.
+                      Still Not Sure? Start your free trial now.
                     </h4>
                   </div>
                   {/* /.title-style-two */}

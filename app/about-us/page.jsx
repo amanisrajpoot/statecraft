@@ -9,6 +9,7 @@ import Block from "@/components/about/Block";
 import Counter2 from "@/components/about/Counter2";
 import AboutCeo from "@/components/about/AboutCeo";
 import AboutFounder from "@/components/about/AboutFounder";
+import DefaultFooter from "@/components/footer/DefaultFooter";
 export const metadata = {
   title: "About Us",
 };
@@ -211,7 +212,7 @@ const AboutUs = () => {
         Wrapper
         ============================================== 
         */}
-      <div className="wrapper position-relative mt-160 lg-mt-100">
+      {/* <div className="wrapper position-relative mt-160 lg-mt-100">
         <div className="container">
           <div className="row">
             <div className="col-xl-8 col-lg-10 m-auto text-center">
@@ -222,7 +223,7 @@ const AboutUs = () => {
                 </h2>
               </div>
               {/* /.title-style-one */}
-              <p
+              {/* <p
                 className="text-lg tx-dark pt-40 pb-35 lg-pt-30 lg-pb-20"
                 data-aos="fade-up"
                 data-aos-delay="100"
@@ -272,7 +273,7 @@ const AboutUs = () => {
           className="lazy-img shapes shape-four"
           style={{ top: "-3%", right: "14%" }}
         />
-      </div>
+      </div> */}
       {/* /.wrapper */}
 
       {/*
@@ -288,28 +289,7 @@ const AboutUs = () => {
         Footer
         ============================================== 
         */}
-      <div className="footer-style-one theme-basic-footer position-relative">
-        <div className="shapes shape-one" />
-        <div className="container">
-          <div className="inner-wrapper">
-            <Footer />
-            <div className="bottom-footer">
-              <p className="copyright text-center m0">
-                © {new Date().getFullYear()}
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://themeforest.net/user/ib-themes"
-                >
-                  ib-themes
-                </a>
-              </p>
-            </div>
-          </div>
-          {/* /.inner-wrapper */}
-        </div>
-      </div>
-      {/* /.footer-style-one */}
+      <DefaultFooter />
     </>
   );
 };

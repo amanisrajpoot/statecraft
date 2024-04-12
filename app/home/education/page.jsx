@@ -36,14 +36,6 @@ const education = () => {
         --> */}
       <HeroCorousel />
       <FeatureBlockHeader />
-      <div class="mx-auto max-w-screen-lg mt-80 mb-20">
-        <div class="text-center">
-          <h2 class="text-lg font-semibold text-black">Crossword of the Day</h2>
-        </div>
-        <div class="mt-4">
-        <iframe width="100%" height="700px" style={{border:"3px solid black", margin:"auto", display:"block"}} frameborder="0" src="https://crosswordlabs.com/embed/current-affair-suduko-2"></iframe>
-        </div>
-      </div>
       <Hero />
       {/* <!--
         =====================================================
@@ -111,12 +103,15 @@ const education = () => {
 		Feature Section Forty Two
 		============================================== 
 		*/}
-    {/* <div>
-      <div>
-      <h2 className="main-title fw-500 tx-dark m0">Crossword of the Day</h2>
+    <div class="mx-auto max-w-screen-lg mt-80 mb-20">
+        <div class="text-center">
+          <h2 class="text-lg font-semibold text-black">Crossword of the Day</h2>
+        </div>
+        <div class="mt-4">
+        <iframe width="100%" height="700px" style={{border:"3px solid black", margin:"auto", display:"block"}} frameborder="0" src="https://crosswordlabs.com/embed/current-affair-suduko-2"></iframe>
+        </div>
       </div>
-      <iframe width="100%" height="700px" style={{border:"3px solid black", margin:"auto", display:"block"}} frameborder="0" src="https://crosswordlabs.com/embed/current-affair-suduko-2"></iframe>
-    </div> */}
+      
       <div className="fancy-feature-fortyTwo position-relative pt-130 pb-180 mt-180 lg-pt-80 lg-pb-80 xs-mt-120">
         <div className="rating-box">
           <img src="/images/shape/shape_154.svg" alt="media" />

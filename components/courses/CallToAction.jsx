@@ -14,12 +14,12 @@ const CallToAction = ({ details }) => {
                 data-aos-delay="100"
               >
                 <h2 className="main-title fw-500 tx-dark">
-                  Have Any Project? <br />
-                  <span className="position-relative">
+                  Ready to complete your History and Geography Syllabus? <br />
+                  {/* <span className="position-relative">
                     Let’s Talk
                     <img src="/images/shape/shape_132.svg" alt="shape" />
-                  </span>
-                  &amp; Grow your Business
+                  </span> 
+                  &amp; Grow your Business*/}
                 </h2>
               </div>
               {/* /.title-style-ten */}

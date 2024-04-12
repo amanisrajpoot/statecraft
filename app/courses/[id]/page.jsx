@@ -29,6 +29,20 @@ const courseData = [
     ],
     courseLink: "",
     tags: ["prelims", "mains", "upsc", "kpsc"],
+    startDate: "03/05/2024",
+    endDate: "05/05/2024",
+    courseUSP:[1,3,4],
+    coursePrice: [
+      { price: 1500, discountedPrice: 3000, title: "Offline" },
+      { price: 1500, discountedPrice: 3000, title: "Online" },
+    ],
+    faculty: [
+      "Vijay Kumar sir (popularly known ad Walking Encyclopaedia) having 20+ years of teaching experience",
+      "Mahendra Sir ( Presently Tehsildar) 15+ years of teaching experience "
+    ],
+    details:["Are you ready to conquer the KPSC KAS Prelims with confidence and finesse? Look no further than our intensive 3-day crash course tailored specifically for aspirants like you!", "In just three power-packed days, our course provides a comprehensive one-time solution for mastering Karnataka History and Karnataka Geography, the backbone of the KPSC KAS Prelims examination. Led by renowned experts, including Vijay Kumar sir, popularly known as the Walking Encyclopaedia, with over 20 years of teaching experience, and Mahendra Sir, presently a Tehsildar, boasting 15+ years of teaching expertise.",],
+    resultDetails:["Upon successful completion of the 3-day crash course, students will acquire an in-depth understanding of Karnataka History and Geography, pivotal for excelling in the KPSC KAS Prelims. Guided by distinguished educators Vijay Kumar sir and Mahendra Sir, participants will gain not only knowledge but also confidence and finesse in approaching exam questions.",
+    "The intensive curriculum, coupled with personalized attention from experienced faculty, ensures that participants grasp key concepts effectively. With a solid foundation in Karnataka History and Geography, students will be empowered to tackle exam questions confidently and effectively, setting them on the path to success in the KPSC KAS Prelims."],
   },
   {
     id: 2,
@@ -44,6 +58,20 @@ const courseData = [
     ],
     courseLink: "",
     tags: ["prelims", "upsc", "kpsc"],
+    startDate: "03/05/2024",
+    endDate: "05/05/2024",
+    courseUSP:[1,3,4],
+    coursePrice: [
+      { price: 1500, discountedPrice: 3000, title: "Offline" },
+      { price: 1500, discountedPrice: 3000, title: "Online" },
+    ],
+    faculty: [
+      "Vijay Kumar sir (popularly known ad Walking Encyclopaedia) having 20+ years of teaching experience",
+      "Mahendra Sir ( Presently Tehsildar) 15+ years of teaching experience "
+    ],
+    details:["Are you ready to conquer the KPSC KAS Prelims with confidence and finesse? Look no further than our intensive 3-day crash course tailored specifically for aspirants like you!", "In just three power-packed days, our course provides a comprehensive one-time solution for mastering Karnataka History and Karnataka Geography, the backbone of the KPSC KAS Prelims examination. Led by renowned experts, including Vijay Kumar sir, popularly known as the Walking Encyclopaedia, with over 20 years of teaching experience, and Mahendra Sir, presently a Tehsildar, boasting 15+ years of teaching expertise.",],
+    resultDetails:["Upon successful completion of the 3-day crash course, students will acquire an in-depth understanding of Karnataka History and Geography, pivotal for excelling in the KPSC KAS Prelims. Guided by distinguished educators Vijay Kumar sir and Mahendra Sir, participants will gain not only knowledge but also confidence and finesse in approaching exam questions.",
+    "The intensive curriculum, coupled with personalized attention from experienced faculty, ensures that participants grasp key concepts effectively. With a solid foundation in Karnataka History and Geography, students will be empowered to tackle exam questions confidently and effectively, setting them on the path to success in the KPSC KAS Prelims."],
     gallery: [
       {
         src: "/images/assets/focus40One.png",
@@ -61,19 +89,29 @@ const courseData = [
   },
   {
     id: 3,
-    imgSrc: "/images/assets/featureCourses3.jpg",
-    description: "3 Day Crash Course | KPSC KAS Prelims Batch",
+    imgSrc: ["/images/assets/course3/english.jpeg", "/images/assets/course3/kannada.jpeg"],
+    description: "3 Days Crash Course for Karnataka History and Karnataka Geography",
     duration: "3 Days",
-    title: "3 Day Crash Course",
+    title: "3 Day Crash Course | KPSC KAS Prelims Batch",
+    tags: ["kpsc"],
+    classes: "6 Hours",
     difficulty: 5,
-    ratingsCount: 310,
+    ratingsCount: 31,
+    courseLink: "https://pages.razorpay.com/pl_NrmdFZW8Ri756o/view",
+    startDate: "03/05/2024",
+    endDate: "05/05/2024",
+    courseUSP:[1,3,4],
     coursePrice: [
       { price: 1500, discountedPrice: 3000, title: "Offline" },
       { price: 1500, discountedPrice: 3000, title: "Online" },
     ],
-    courseLink: "https://pages.razorpay.com/pl_NrmdFZW8Ri756o/view",
-    tags: ["kpsc"],
-    classes: "6 Hours",
+    faculty: [
+      "Vijay Kumar sir (popularly known ad Walking Encyclopaedia) having 20+ years of teaching experience",
+      "Mahendra Sir ( Presently Tehsildar) 15+ years of teaching experience "
+    ],
+    details:["Are you ready to conquer the KPSC KAS Prelims with confidence and finesse? Look no further than our intensive 3-day crash course tailored specifically for aspirants like you!", "In just three power-packed days, our course provides a comprehensive one-time solution for mastering Karnataka History and Karnataka Geography, the backbone of the KPSC KAS Prelims examination. Led by renowned experts, including Vijay Kumar sir, popularly known as the Walking Encyclopaedia, with over 20 years of teaching experience, and Mahendra Sir, presently a Tehsildar, boasting 15+ years of teaching expertise.",],
+    resultDetails:["Upon successful completion of the 3-day crash course, students will acquire an in-depth understanding of Karnataka History and Geography, pivotal for excelling in the KPSC KAS Prelims. Guided by distinguished educators Vijay Kumar sir and Mahendra Sir, participants will gain not only knowledge but also confidence and finesse in approaching exam questions.",
+    "The intensive curriculum, coupled with personalized attention from experienced faculty, ensures that participants grasp key concepts effectively. With a solid foundation in Karnataka History and Geography, students will be empowered to tackle exam questions confidently and effectively, setting them on the path to success in the KPSC KAS Prelims."],
     gallery: [
       {
         src: "/images/assets/3DayOne.png",
@@ -100,7 +138,7 @@ const courseData = [
         alt: "media",
       },
     ],
-  },
+  },  
   {
     id: 4,
     imgSrc: "/images/assets/featureCourses4.jpg",
@@ -118,6 +156,20 @@ const courseData = [
     classes: "40 mins",
     limitedSeats: "40",
     totalTests: "40",
+    startDate: "03/05/2024",
+    endDate: "05/05/2024",
+    courseUSP:[1,3,4],
+    coursePrice: [
+      { price: 1500, discountedPrice: 3000, title: "Offline" },
+      { price: 1500, discountedPrice: 3000, title: "Online" },
+    ],
+    faculty: [
+      "Vijay Kumar sir (popularly known ad Walking Encyclopaedia) having 20+ years of teaching experience",
+      "Mahendra Sir ( Presently Tehsildar) 15+ years of teaching experience "
+    ],
+    details:["Are you ready to conquer the KPSC KAS Prelims with confidence and finesse? Look no further than our intensive 3-day crash course tailored specifically for aspirants like you!", "In just three power-packed days, our course provides a comprehensive one-time solution for mastering Karnataka History and Karnataka Geography, the backbone of the KPSC KAS Prelims examination. Led by renowned experts, including Vijay Kumar sir, popularly known as the Walking Encyclopaedia, with over 20 years of teaching experience, and Mahendra Sir, presently a Tehsildar, boasting 15+ years of teaching expertise.",],
+    resultDetails:["Upon successful completion of the 3-day crash course, students will acquire an in-depth understanding of Karnataka History and Geography, pivotal for excelling in the KPSC KAS Prelims. Guided by distinguished educators Vijay Kumar sir and Mahendra Sir, participants will gain not only knowledge but also confidence and finesse in approaching exam questions.",
+    "The intensive curriculum, coupled with personalized attention from experienced faculty, ensures that participants grasp key concepts effectively. With a solid foundation in Karnataka History and Geography, students will be empowered to tackle exam questions confidently and effectively, setting them on the path to success in the KPSC KAS Prelims."],
     gallery: [
       {
         src: "/images/assets/focus40One.png",
@@ -150,6 +202,20 @@ const courseData = [
     classes: "60 mins",
     limitedSeats: "60",
     totalTests: "60",
+    startDate: "03/05/2024",
+    endDate: "05/05/2024",
+    courseUSP:[1,3,4],
+    coursePrice: [
+      { price: 1500, discountedPrice: 3000, title: "Offline" },
+      { price: 1500, discountedPrice: 3000, title: "Online" },
+    ],
+    faculty: [
+      "Vijay Kumar sir (popularly known ad Walking Encyclopaedia) having 20+ years of teaching experience",
+      "Mahendra Sir ( Presently Tehsildar) 15+ years of teaching experience "
+    ],
+    details:["Are you ready to conquer the KPSC KAS Prelims with confidence and finesse? Look no further than our intensive 3-day crash course tailored specifically for aspirants like you!", "In just three power-packed days, our course provides a comprehensive one-time solution for mastering Karnataka History and Karnataka Geography, the backbone of the KPSC KAS Prelims examination. Led by renowned experts, including Vijay Kumar sir, popularly known as the Walking Encyclopaedia, with over 20 years of teaching experience, and Mahendra Sir, presently a Tehsildar, boasting 15+ years of teaching expertise.",],
+    resultDetails:["Upon successful completion of the 3-day crash course, students will acquire an in-depth understanding of Karnataka History and Geography, pivotal for excelling in the KPSC KAS Prelims. Guided by distinguished educators Vijay Kumar sir and Mahendra Sir, participants will gain not only knowledge but also confidence and finesse in approaching exam questions.",
+    "The intensive curriculum, coupled with personalized attention from experienced faculty, ensures that participants grasp key concepts effectively. With a solid foundation in Karnataka History and Geography, students will be empowered to tackle exam questions confidently and effectively, setting them on the path to success in the KPSC KAS Prelims."],
     gallery: [
       {
         src: "/images/assets/focus40One.png",
@@ -197,7 +263,7 @@ const DynamicCoursesDetails = ({ params }) => {
           <div className="container">
             <div className="row">
               <div className="col-lg-8" data-aos="fade-right">
-                <ProjectSlide slide={portfolio} />
+                <ProjectSlide slide={portfolio.imgSrc} />
                 {/* /#gallery-carousel */}
               </div>
               {/* End .col-lg-8 */}
@@ -216,7 +282,7 @@ const DynamicCoursesDetails = ({ params }) => {
             </div>
             {/* End .row */}
             <div className="row">
-              <Features />
+              <Features details={portfolio.courseUSP}/>
             </div>
             <div className="col-xl-9  mt-120 lg-mt-80">
               <div
@@ -232,76 +298,36 @@ const DynamicCoursesDetails = ({ params }) => {
               </div>
               {/* /.title-style-twelve */}
               <p data-aos="fade-up">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullaum laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit volupta velit esse cillum dolore eu fugiat
-                nulla pariatur.
+                {portfolio.details[0]}
               </p>
               <p data-aos="fade-up">
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum magna quis
-                nostured.
-              </p>
-
-              <div className="row">
-                <div className="col-xl-8">
-                  <div
-                    className="title-style-twelve mb-45 pt-75 lg-pt-40 lg-mb-30"
-                    data-aos="fade-up"
-                  >
-                    <div className="sc-title fst-italic position-relative">
-                      Work Proccess
-                    </div>
-                    <h2 className="main-title fw-500 tx-dark">
-                      Find out the design solution.
-                    </h2>
-                  </div>
-                  {/* /.title-style-twelve */}
-                </div>
-              </div>
-              <p data-aos="fade-up">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <p data-aos="fade-up">
-                Enim eu turpis egestas pretium aenean pharetra. Dui accumsan sit
-                amet nulla facilisi morbi tempus iaculis. Eu ultrices vitae
-                auctor eu augue. Sed turpis tincidunt id aliquet risus Purus in
-                massa tempor nec feugiat nisl pretium fusce. Feugiat vivamus at
-                augue eget arcu dictum. Gravida quis blandit turpis cursus in
-                hac habitasse platea dictumst.
-              </p>
+                {portfolio.details[1]}
+              </p>  
+              
               <div className="row">
                 <PortfolioGallery images={portfolio?.gallery} />
               </div>
 
               <div
-                className="title-style-twelve mb-45 mt-120 lg-mb-30 lg-mt-80"
-                data-aos="fade-up"
-              >
-                <div className="sc-title fst-italic position-relative">
-                  Work Proccess
+                  className="title-style-twelve mb-45 mt-45 lg-mb-30"
+                  data-aos="fade-up"
+                  data-aos-delay="400" // Adjusted the delay value
+                >
+                  <div className="sc-title fst-italic position-relative">
+                    Result
+                  </div>
+                  <h2 className="main-title fw-500 tx-dark">
+                    The Final Outcome of {portfolio?.title.split("|")[0]}
+                  </h2>
                 </div>
-                <h2 className="main-title fw-500 tx-dark">Final Result</h2>
-              </div>
-              {/* /.title-style-twelve */}
-
-              <p data-aos="fade-up">
-                Content creators and human resources personnel are able to
-                seamlessly update the website through graphical interfaces, and
-                the site simply rebuilds itself along with search engine indexes
-                as the OpenWeb team continues to create.
-              </p>
-              <p data-aos="fade-up">
-                Enim eu turpis egestas pretium aenean pharetra. Dui accumsan sit
-                amet nulla facilisi mor tempu iaculis. Eu ultrices vitae auctor
-                eu augue. Sed turpis tincidunt id aliquet risus Purus in massa
-                tempor nec feugiat nisl pretium fusce. Feugiat vivamus at augue
-                eget arcu dictum. Gravida quis blandit turpis cursus in hac
-                habitasse platea dictumst.
-              </p>
+                {/* /.title-style-twelve */}
+                <p data-aos="fade-up" data-aos-delay="400"> {/* Adjusted the delay value */}
+                  {portfolio.resultDetails[0]}  
+                </p>
+                <p data-aos="fade-up" data-aos-delay="400"> {/* Adjusted the delay value */}
+                  {portfolio.resultDetails[1]}
+                </p>
+ 
             </div>
             {/* End col-xl-9 */}
           </div>

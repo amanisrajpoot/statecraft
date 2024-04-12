@@ -7,6 +7,7 @@ import Footer from "@/components/home-page/home-5/footer";
 import Team4 from "@/components/team/Team4";
 import Link from "next/link";
 import Image from "next/image";
+import DefaultFooter from "@/components/footer/DefaultFooter";
 export const metadata = {
   title: "About Us v2 || Jano - Creative Multipurpose React NextJS Template",
 };
@@ -215,7 +216,7 @@ const AboutKPSC = () => {
         Footer
         =====================================================
         --> */}
-      <Footer />
+      <DefaultFooter />
     </>
   );
 };

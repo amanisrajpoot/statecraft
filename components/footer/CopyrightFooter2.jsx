@@ -68,13 +68,12 @@ const Footer = () => {
               Copyright © {new Date().getFullYear()}
               <a
                 style={{ color: "inherit" }}
-                href="https://themeforest.net/user/ib-themes"
+                //href="https://themeforest.net/user/ib-themes"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                ib-themes
+                 StateCraft
               </a>
-              inc.
             </p>
           </div>
         </div>

@@ -144,7 +144,7 @@ const MainMenu = () => {
           </li>
           {/* End li (Courses) */}
 
-          <li className="nav-item  dropdown">
+          {/* <li className="nav-item  dropdown">
             <a
               // className="nav-link dropdown-toggle"
               className={
@@ -198,7 +198,7 @@ const MainMenu = () => {
                 </li>
               ))}
             </ul>
-          </li>
+          </li> */}
           {/* End li (pages) */}
 
           {/* <li className="nav-item dropdown">
@@ -269,15 +269,35 @@ const MainMenu = () => {
 
           <li className="nav-item">
             <Link
+              href="/downloads"
+              className={`nav-link ${isActive("/contact/contact-v2") ? "active" : ""}`}
+            >
+              Downloads
+            </Link>
+          </li>
+          {/* End li (contact) */}
+
+          <li className="nav-item">
+            <Link
+              href="/infographics"
+              className={`nav-link ${isActive("/contact/contact-v2") ? "active" : ""}`}
+            >
+              Infographics
+            </Link>
+          </li>
+          {/* End li (contact) */}
+
+          {/* <li className="nav-item">
+            <Link
               href="/contact/contact-v2"
               className={`nav-link ${isActive("/contact/contact-v2") ? "active" : ""}`}
             >
               Contact
             </Link>
-          </li>
+          </li> */}
           {/* End li (contact) */}
 
-          <li className="nav-item dropdown">
+          {/* <li className="nav-item dropdown">
             <a
               // className="nav-link dropdown-toggle"
               className={
@@ -307,7 +327,7 @@ const MainMenu = () => {
                 </li>
               ))}
             </ul>
-          </li>
+          </li> */}
           {/* End li (More) */}
         </ul>
         {/* End ul */}

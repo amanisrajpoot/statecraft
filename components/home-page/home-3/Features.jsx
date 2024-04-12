@@ -46,11 +46,12 @@ const featuresData = [
   },
 ];
 
-const Features = () => {
+const Features = ({details}) => {
+  const filteredFeatures = featuresData.filter((feature) => details.includes(feature.id));
   return (
     <>
-      {featuresData.map((feature) => (
-        <div
+      {filteredFeatures.map((feature) => (
+      <div
           key={feature.id}
           className="col-lg-4 col-sm-6 d-flex mt-40"
           data-aos="fade-up"

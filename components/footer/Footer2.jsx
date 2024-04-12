@@ -3,31 +3,31 @@ const columns = [
     title: "Links",
     links: [
       { label: "Home", url: "/" },
-      { label: "Pricing", url: "/" },
       { label: "About us", url: "/" },
-      { label: "Service", url: "/" },
-      { label: "Blog", url: "/" },
+      { label: "Courses", url: "/" },
+      //{ label: "Downloads", url: "/" },
+      //{ label: "Blog", url: "/" },
     ],
   },
   {
     title: "Support",
     links: [
-      { label: "Item Support", url: "/" },
-      { label: "Forum", url: "/" },
-      { label: "Report Abuse", url: "/" },
-      { label: "Live", url: "/" },
+      { label: "Downloads", url: "downloads" },
+      { label: "Infographics", url: "infographics" },
+      { label: "Contact", url: "contact/contact-v2" },
+      //{ label: "Live", url: "/" },
     ],
   },
-  {
-    title: "Products",
-    links: [
-      { label: "Web hosting", url: "/" },
-      { label: "Cloud hosting", url: "/" },
-      { label: "WordPress hosting", url: "/" },
-      { label: "VPS hosting", url: "/" },
-      { label: "Dedicated hosting", url: "/" },
-    ],
-  },
+  // {
+  //   title: "Products",
+  //   links: [
+  //     { label: "Web hosting", url: "/" },
+  //     { label: "Cloud hosting", url: "/" },
+  //     { label: "WordPress hosting", url: "/" },
+  //     { label: "VPS hosting", url: "/" },
+  //     { label: "Dedicated hosting", url: "/" },
+  //   ],
+  // },
 ];
 
 const Footer2 = () => {
