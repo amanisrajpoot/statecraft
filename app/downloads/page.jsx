@@ -3,7 +3,7 @@ import DefaultFooter from "@/components/footer/DefaultFooter";
 import PortfolioGallery4 from "@/components/portfolio/PortfolioGallery4";
 import DownloadDetails from "@/components/downloads/DownloadDetails";
 export const metadata = {
-  title: "Portfolio V4 || Jano - Creative Multipurpose React NextJS Template",
+  title: "StateCraft || Crafting the Path to Succes...",
 };
 
 const downloadData = [

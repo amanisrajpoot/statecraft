@@ -3,8 +3,8 @@ const columns = [
     title: "Links",
     links: [
       { label: "Home", url: "/" },
-      { label: "About us", url: "/" },
-      { label: "Courses", url: "/" },
+      { label: "About us", url: "/about-us" },
+      { label: "Courses", url: "/courses" },
       //{ label: "Downloads", url: "/" },
       //{ label: "Blog", url: "/" },
     ],
@@ -12,9 +12,9 @@ const columns = [
   {
     title: "Support",
     links: [
-      { label: "Downloads", url: "downloads" },
-      { label: "Infographics", url: "infographics" },
-      { label: "Contact", url: "contact/contact-v2" },
+      { label: "Downloads", url: "/downloads" },
+      { label: "Infographics", url: "/infographics" },
+      { label: "Contact", url: "/contact-us" },
       //{ label: "Live", url: "/" },
     ],
   },

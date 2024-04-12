@@ -11,7 +11,7 @@ import AboutCeo from "@/components/about/AboutCeo";
 import AboutFounder from "@/components/about/AboutFounder";
 import DefaultFooter from "@/components/footer/DefaultFooter";
 export const metadata = {
-  title: "About Us",
+  title: "StateCraft || Crafting the Path to Succes...",
 };
 const AboutUs = () => {
   return (
