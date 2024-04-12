@@ -1,7 +1,6 @@
 import DefaulHeader from "@/components/header/DefaulHeader";
 import DefaultFooter from "@/components/footer/DefaultFooter";
 import PortfolioGallery4 from "@/components/portfolio/PortfolioGallery4";
-import MenuTopTitle from "@/components/header/menuTopTitle";
 import DownloadDetails from "@/components/downloads/DownloadDetails";
 export const metadata = {
   title: "Portfolio V4 || Jano - Creative Multipurpose React NextJS Template",
@@ -75,10 +74,36 @@ const Downloads = () => {
         Feature Section Fifty One
         ============================================== 
         */}
-      <MenuTopTitle
+      {/* <MenuTopTitle
         title={"All Downloads"}
         description={"Check out our Downloads."}
-      />
+      /> */}
+
+      <div className="fancy-feature-fiftyOne position-relative mt-200">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-7" data-aos="fade-right">
+                  <div className="title-style-five mb-65 lg-mb-40">
+                    <div className="sc-title-two fst-italic position-relative">
+                      {"All Downloads"}
+                    </div>
+                    <h2 className="main-title fw-500 tx-dark">{"Check out our Downloads."}</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* /.container */}
+            <img
+              src="/images/shape/shape_172.svg"
+              alt="shap"
+              className="lazy-img shapes shape-two"
+            />
+            <img
+              src="/images/shape/shape_175.svg"
+              alt="shap"
+              className="lazy-img shapes shape-three"
+            />
+          </div>
 
       {/* <!-- 
         =============================================
