@@ -17,7 +17,7 @@ export const metadata = {
 const courseData = [
   {
     id: 1,
-    imgSrc: "/images/assets/featureCourses4.jpeg",
+    imgSrc: "/images/assets/featureCourses1.jpg",
     description: "Prelims Cum Mains Foundation(2025)",
     duration: "15 months",
     title: "Foundation Program",
@@ -32,7 +32,7 @@ const courseData = [
   },
   {
     id: 2,
-    imgSrc: "/images/assets/featureCourses2.jpg",
+    imgSrc: "/images/assets/featureCourses4.jpeg",
     description: "UPSC Interview Guidance Program",
     duration: "15 months",
     title: "UPSC Interview Guidance Program",
