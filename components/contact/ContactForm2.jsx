@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm2 = () => {
   return (
-    <form action="#">
+    <form action="mailto:helpdesk@statecraft.in" method="post" enctype="text/plain">
       <div className="messages" />
       <div className="row controls">
         <div className="col-12">
@@ -10,22 +10,24 @@ const ContactForm2 = () => {
             <label className="d-block">Name*</label>
             <input
               type="text"
-              placeholder="Rashed Kabir"
+              placeholder="Jain Buddh"
               name="name"
-              required="required"
+              required
             />
             <div className="help-block with-errors" />
           </div>
         </div>
         <div className="col-12">
           <div className="input-group-meta form-group mb-40">
-            <label className="d-block">Email*</label>
+          <label className="d-block">Phone Number</label>
             <input
-              type="email"
-              placeholder="demo@domain.com"
-              name="email"
-              required="required"
+              type="tel"
+              placeholder="Phone Number"
+              name="phone"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              required
             />
+            <small>Format: 1234567890</small>
             <div className="help-block with-errors" />
           </div>
         </div>
@@ -34,14 +36,17 @@ const ContactForm2 = () => {
             <textarea
               placeholder="Your message*"
               name="message"
-              required="required"
+              required
               defaultValue={""}
             />
             <div className="help-block with-errors" />
           </div>
         </div>
         <div className="col-12">
-          <button className="btn-one fw-500 w-100 text-uppercase fs-14 d-block">
+          <button
+            type="submit"
+            className="btn-one fw-500 w-100 text-uppercase fs-14 d-block"
+          >
             Send Message
           </button>
         </div>

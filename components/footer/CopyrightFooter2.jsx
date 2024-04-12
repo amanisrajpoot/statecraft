@@ -3,22 +3,30 @@ import Link from "next/link";
 const links = [
   {
     title: "Privacy & Terms.",
-    href: "/faq",
+    href: "/about-us",
   },
   {
     title: "Contact Us",
-    href: "/contact",
+    href: "/contact-us",
   },
 ];
 
 const icons = [
   {
     icon: "fab fa-facebook-f",
-    href: "https://www.facebook.com/",
+    href: "https://www.facebook.com/statecraftiasacademy",
+  },
+  // {
+  //   icon: "fab fa-twitter",
+  //   href: "https://www.twitter.com/",
+  // },
+  {
+    icon: "fab fa-instagram",
+    href: "https://www.instagram.com/statecrafti",
   },
   {
-    icon: "fab fa-twitter",
-    href: "https://www.twitter.com/",
+    icon: "fab fa-youtube",
+    href: "https://www.youtube.com/@statecraftias",
   },
   {
     icon: "fab fa-linkedin-in",

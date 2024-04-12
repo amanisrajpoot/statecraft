@@ -41,7 +41,7 @@ const Hero = () => {
                   />
                 </a>
                 <div className="btn-eighteen position-relative d-inline-block tx-dark mt-15 md-mt-20">
-                  <a href="#" className="fw-500 tran3s">
+                  <a href="/contact-us" className="fw-500 tran3s">
                     Join for Free Now!
                   </a>
                 </div>

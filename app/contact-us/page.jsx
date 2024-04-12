@@ -1,5 +1,6 @@
 import BlockContact2 from "@/components/contact/BlockContact2";
 import ContactForm2 from "@/components/contact/ContactForm2";
+import DefaultFooter from "@/components/footer/DefaultFooter";
 import Footer from "@/components/home-page/home-10/Footer";
 import Header from "@/components/home-page/home-10/Header";
 export const metadata = {
@@ -71,7 +72,7 @@ const ContactUs = () => {
         Footer
         ============================================== 
         */}
-      <div className="footer-style-one theme-basic-footer position-relative">
+      {/* <div className="footer-style-one theme-basic-footer position-relative">
         <div className="shapes shape-one" />
         <div className="container">
           <div className="inner-wrapper">
@@ -90,9 +91,13 @@ const ContactUs = () => {
             </div>
           </div>
           {/* /.inner-wrapper */}
-        </div>
-      </div>
+      {/* </div>
+        </div> */}
+
+      
+      
       {/* /.footer-style-one */}
+      <DefaultFooter />
     </>
   );
 };

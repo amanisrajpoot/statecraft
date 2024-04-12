@@ -4,22 +4,22 @@ export const menuItems = [
     link: "/about-us",
     isSubmenu: false,
   },
-  {
-    title: "UPSC",
-    subItems: [
-      { title: "About UPSC", link: "/upsc/about-upsc" },
-      { title: "UPSC Syllabus", link: "/upsc/upsc-syllabus" },
-    ],
-    isSubmenu: true,
-  },
-  {
-    title: "KPSC Courses",
-    subItems: [
-      { title: "About KPSC", link: "/kpsc/about-kpsc" },
-      { title: "KPSC Syllabus", link: "/kpsc/kpsc-syllabus" },
-    ],
-    isSubmenu: true,
-  },
+  // {
+  //   title: "UPSC",
+  //   subItems: [
+  //     { title: "About UPSC", link: "/upsc/about-upsc" },
+  //     { title: "UPSC Syllabus", link: "/upsc/upsc-syllabus" },
+  //   ],
+  //   isSubmenu: true,
+  // },
+  // {
+  //   title: "KPSC Courses",
+  //   subItems: [
+  //     { title: "About KPSC", link: "/kpsc/about-kpsc" },
+  //     { title: "KPSC Syllabus", link: "/kpsc/kpsc-syllabus" },
+  //   ],
+  //   isSubmenu: true,
+  // },
 ];
 
 export const courseItems = [
@@ -32,6 +32,7 @@ export const courseItems = [
     title: "UPSC Courses",
     subItems: [
       { title: "Interview Preparation", link: "/courses/2" },
+      { title: "Sprint 60", link: "/courses/6" }, 
     ],
     isSubmenu: true,
   },
@@ -151,8 +152,9 @@ export const portfolioItems = [
 ];
 
 export const blogItems = [
-  { link: "/blog/blog-v1", text: "Editorial" },
-  { link: "/blog/blog-v2", text: "Current Affair" },
+  { link: "#", text: "Coming Soon.." }
+  // { link: "/blog/blog-v1", text: "Editorial" },
+  // { link: "/blog/blog-v2", text: "Current Affair" },
 ];
 export const contactItems = [
   { link: "/contact/contact-v1", text: "Contact - Insurance" },

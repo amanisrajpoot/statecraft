@@ -7,8 +7,8 @@ const BlockContact2 = () => {
       title: "Our Address",
       content: (
         <>
-          1012 Pebda Parkway, Mirpur 2 <br />
-          Dhaka, Bangladesh
+          2943/E, 1st Floor, opposite to Maruti Mandir,<br />
+          Vijayanagar Bangalore - 560040
         </>
       ),
     },
@@ -18,8 +18,11 @@ const BlockContact2 = () => {
       content: (
         <>
           Open a chat or give us call at <br />
-          <a href="tel:310.841.5500" className="call">
-            310.841.5500
+          <a href="tel:9606167191" className="call">
+           +91-9606167191
+          </a>
+          <a href="tel:6363926886" className="call">
+           +91-6363926886
           </a>
         </>
       ),
@@ -30,8 +33,8 @@ const BlockContact2 = () => {
       content: (
         <>
           Urgent go to live chat portal <br />
-          <a href="mailto:name@email.com" className="webaddress">
-            www.supportlive.com
+          <a href="mailto:helpdesk@statecraft.in" className="webaddress">
+          helpdesk@statecraft.in
           </a>
         </>
       ),

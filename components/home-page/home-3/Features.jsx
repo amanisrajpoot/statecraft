@@ -42,7 +42,21 @@ const featuresData = [
     iconSrc: "/images/assets/3dkpscSix.png",
     title: "Subject Matter Experts",
     description:
-      "For WordPress sites, we have developed a powerful plugin that gives you control over the server and makes it significantly faster.",
+      "Our experts are not those experts that you meet at every other Civil services exam preparation institute.",
+  },
+  {
+    id: 7,
+    iconSrc: "/images/assets/3dkpscFour.png",
+    title: "Full Day Class",
+    description:
+      "Having classes at a place for entire day is not possible with the teachers teaching at multiple institute but our institue provides you with dedicated mentorship.",
+  },
+  {
+    id: 8,
+    iconSrc: "/images/assets/3dkpscTwo.png",
+    title: "Complete Syllabus Coverage",
+    description:
+      "First time ever in a crash course an Institute is going to cover the entire syllabus for the which the course is being targeted for.",
   },
 ];
 

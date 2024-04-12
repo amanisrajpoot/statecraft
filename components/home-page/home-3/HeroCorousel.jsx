@@ -8,20 +8,20 @@ import SwiperImage from "@/components/common/SwiperImage";
 
 const heroSwiperImage = [
     {
-      image: "/images/assets/CrashCourse1.png",
+      image: "/images/assets/banner/brandBanner.png",
+      title: "Banner",
+    },
+    {
+      image: "/images/assets/banner/CrashCourse.png",
       title: "3 Days Crash Course",
     },
     {
-      image: "/images/assets/CrashCourse2.png",
-      title: "Focus 40",
+      image: "/images/assets/banner/sprint60.jpeg",
+      title: "Sprint 60",
     },
     {
-      image: "/images/assets/CrashCourse3.png",
-      title: "Tests",
-    },
-    {
-      image: "/images/assets/CrashCourse4.jpeg",
-      title: "Banners",
+      image: "/images/assets/banner/superman.jpeg",
+      title: "Superman",
     },
   ];
 
@@ -38,7 +38,7 @@ const HeroCorousel = () => {
   }
   return (
     <>
-      <div className="hero-banner-twelve pt-225 pb-120 lg-pb-80 md-pt-200">
+      <div className="hero-banner-twelve pt-200 pb-50 lg-pb-80 md-pt-200" style={{minWidth:"100%"}}>
         <div className="container">
           <SwiperImage swiperData={heroSwiperImage} />
         </div>

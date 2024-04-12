@@ -16,35 +16,6 @@ export const metadata = {
 
 const courseData = [
   {
-    id: 1,
-    imgSrc: "/images/assets/featureCourses1.jpg",
-    description: "Prelims Cum Mains Foundation(2025)",
-    duration: "15 months",
-    title: "Foundation Program",
-    difficulty: 5,
-    ratingsCount: 310,
-    coursePrice: [
-      { price: 97750, discountedPrice: 115000, title: "Offline" },
-      { price: 72250, discountedPrice: 85000, title: "Online" },
-    ],
-    courseLink: "",
-    tags: ["prelims", "mains", "upsc", "kpsc"],
-    startDate: "03/05/2024",
-    endDate: "05/05/2024",
-    courseUSP:[1,3,4],
-    coursePrice: [
-      { price: 1500, discountedPrice: 3000, title: "Offline" },
-      { price: 1500, discountedPrice: 3000, title: "Online" },
-    ],
-    faculty: [
-      "Vijay Kumar sir (popularly known ad Walking Encyclopaedia) having 20+ years of teaching experience",
-      "Mahendra Sir ( Presently Tehsildar) 15+ years of teaching experience "
-    ],
-    details:["Are you ready to conquer the KPSC KAS Prelims with confidence and finesse? Look no further than our intensive 3-day crash course tailored specifically for aspirants like you!", "In just three power-packed days, our course provides a comprehensive one-time solution for mastering Karnataka History and Karnataka Geography, the backbone of the KPSC KAS Prelims examination. Led by renowned experts, including Vijay Kumar sir, popularly known as the Walking Encyclopaedia, with over 20 years of teaching experience, and Mahendra Sir, presently a Tehsildar, boasting 15+ years of teaching expertise.",],
-    resultDetails:["Upon successful completion of the 3-day crash course, students will acquire an in-depth understanding of Karnataka History and Geography, pivotal for excelling in the KPSC KAS Prelims. Guided by distinguished educators Vijay Kumar sir and Mahendra Sir, participants will gain not only knowledge but also confidence and finesse in approaching exam questions.",
-    "The intensive curriculum, coupled with personalized attention from experienced faculty, ensures that participants grasp key concepts effectively. With a solid foundation in Karnataka History and Geography, students will be empowered to tackle exam questions confidently and effectively, setting them on the path to success in the KPSC KAS Prelims."],
-  },
-  {
     id: 2,
     imgSrc: "/images/assets/featureCourses4.jpeg",
     description: "UPSC Interview Guidance Program",
@@ -74,12 +45,6 @@ const courseData = [
     "The intensive curriculum, coupled with personalized attention from experienced faculty, ensures that participants grasp key concepts effectively. With a solid foundation in Karnataka History and Geography, students will be empowered to tackle exam questions confidently and effectively, setting them on the path to success in the KPSC KAS Prelims."],
     gallery: [
       {
-        src: "/images/assets/focus40One.png",
-        width: "460",
-        height: "400",
-        alt: "media",
-      },
-      {
         src: "/images/assets/focus40Two.png",
         width: "460",
         height: "400",
@@ -100,7 +65,7 @@ const courseData = [
     courseLink: "https://pages.razorpay.com/pl_NrmdFZW8Ri756o/view",
     startDate: "03/05/2024",
     endDate: "05/05/2024",
-    courseUSP:[1,3,4],
+    courseUSP:[5,7,8],
     coursePrice: [
       { price: 1500, discountedPrice: 3000, title: "Offline" },
       { price: 1500, discountedPrice: 3000, title: "Online" },
@@ -114,25 +79,7 @@ const courseData = [
     "The intensive curriculum, coupled with personalized attention from experienced faculty, ensures that participants grasp key concepts effectively. With a solid foundation in Karnataka History and Geography, students will be empowered to tackle exam questions confidently and effectively, setting them on the path to success in the KPSC KAS Prelims."],
     gallery: [
       {
-        src: "/images/assets/3DayOne.png",
-        width: "460",
-        height: "400",
-        alt: "media",
-      },
-      {
         src: "/images/assets/3DayTwo.png",
-        width: "460",
-        height: "400",
-        alt: "media",
-      },
-      {
-        src: "/images/assets/3DayThree.png",
-        width: "460",
-        height: "400",
-        alt: "media",
-      },
-      {
-        src: "/images/assets/3DayFour.png",
         width: "460",
         height: "400",
         alt: "media",
@@ -171,12 +118,6 @@ const courseData = [
     resultDetails:["Upon successful completion of the 3-day crash course, students will acquire an in-depth understanding of Karnataka History and Geography, pivotal for excelling in the KPSC KAS Prelims. Guided by distinguished educators Vijay Kumar sir and Mahendra Sir, participants will gain not only knowledge but also confidence and finesse in approaching exam questions.",
     "The intensive curriculum, coupled with personalized attention from experienced faculty, ensures that participants grasp key concepts effectively. With a solid foundation in Karnataka History and Geography, students will be empowered to tackle exam questions confidently and effectively, setting them on the path to success in the KPSC KAS Prelims."],
     gallery: [
-      {
-        src: "/images/assets/focus40One.png",
-        width: "460",
-        height: "400",
-        alt: "media",
-      },
       {
         src: "/images/assets/focus40Two.png",
         width: "460",
@@ -217,15 +158,46 @@ const courseData = [
     resultDetails:["Upon successful completion of the 3-day crash course, students will acquire an in-depth understanding of Karnataka History and Geography, pivotal for excelling in the KPSC KAS Prelims. Guided by distinguished educators Vijay Kumar sir and Mahendra Sir, participants will gain not only knowledge but also confidence and finesse in approaching exam questions.",
     "The intensive curriculum, coupled with personalized attention from experienced faculty, ensures that participants grasp key concepts effectively. With a solid foundation in Karnataka History and Geography, students will be empowered to tackle exam questions confidently and effectively, setting them on the path to success in the KPSC KAS Prelims."],
     gallery: [
+      
       {
-        src: "/images/assets/focus40One.png",
+        src: "/images/assets/focus40Two.png",
         width: "460",
         height: "400",
         alt: "media",
       },
+    ],
+  },
+  {
+    id: 6,
+    imgSrc: "/images/assets/banner/sprint60.jpeg",
+    description: "Sprint 60 | UPSC Working Professional Batch",
+    duration: "60 Days",
+    title: "Sprint 60",
+    difficulty: 4,
+    ratingsCount: 31,
+    coursePrice: [
+      { price: 10500, discountedPrice: 21000, title: "Offline" },
+      { price: 10500, discountedPrice: 21000, title: "Online" },
+    ],
+    courseLink: "https://pages.razorpay.com/pl_NsBs2NfKBwNJ3e/view",
+    tags: ["kpsc"],
+    classes: "60 mins",
+    limitedSeats: "60",
+    totalTests: "60",
+    startDate: "03/05/2024",
+    endDate: "05/07/2024",
+    courseUSP:[1,5,8],
+    faculty: [
+      "Vijay Kumar sir (popularly known ad Walking Encyclopaedia) having 20+ years of teaching experience",
+      "Mahendra Sir ( Presently Tehsildar) 15+ years of teaching experience "
+    ],
+    details:["Unlock Your UPSC Potential with Our Comprehensive 60-Day Crash Course! Are you a working professional striving to conquer the UPSC Civil Services Examination? Look no further than our meticulously designed 60-day crash course, crafted to propel you towards success.", "In this intensive program, we've distilled the essence of UPSC preparation into a structured, time-efficient curriculum. Led by seasoned experts with decades of experience, our course will empower you to master the core subjects and sharpen your exam-winning strategies, all while juggling your professional commitments.","Dive deep into the intricacies of Indian Polity, Geography, History, and more, with personalized guidance from our esteemed faculty. Benefit from their insider perspectives, time-tested techniques, and unwavering support as you navigate the challenging UPSC landscape."],
+    resultDetails:["Whether you're a first-time aspirant or a seasoned contender, this 60-day sprint course is your gateway to UPSC success. Unlock your full potential, strengthen your conceptual understanding, and fine-tune your preparation with our comprehensive, result-oriented approach.",
+    "Embark on this transformative journey and emerge as a confident, well-equipped UPSC candidate, ready to ace the Prelims and Mains examinations. Enroll now and let our expertise be your guiding light towards your dream of becoming a civil servant."],
+    gallery: [
       {
         src: "/images/assets/focus40Two.png",
-        width: "460",
+        width: "960",
         height: "400",
         alt: "media",
       },

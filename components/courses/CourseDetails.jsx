@@ -11,20 +11,7 @@ const CourseDetails = () => {
   const [filter, setFilter] = useState("*");
 
   const courseData = [
-    {
-      id: 1,
-      imgSrc: "/images/assets/featureCourses1.jpg",
-      description: "Prelims Cum Mains Foundation(2025)",
-      duration: "15 months",
-      title: "Foundation Program",
-      difficulty: 5,
-      ratingsCount: 310,
-      coursePrice: [
-        { price: 97750, discountedPrice: 115000, title: "Offline" },
-        { price: 72250, discountedPrice: 85000, title: "Online" },
-      ],
-      tags: ["prelims", "mains", "upsc", "kpsc"],
-    },
+    
     {
       id: 2,
       imgSrc: "/images/assets/featureCourses2.jpg",
@@ -37,7 +24,7 @@ const CourseDetails = () => {
         { price: 97750, discountedPrice: 115000, title: "Offline" },
         { price: 72250, discountedPrice: 85000, title: "Online" },
       ],
-      tags: ["prelims", "upsc", "kpsc"],
+      tags: ["prelims", "upsc", "interview"],
     },
     {
       id: 3,
@@ -51,7 +38,7 @@ const CourseDetails = () => {
         { price: 1500, discountedPrice: 3000, title: "Offline" },
         { price: 1500, discountedPrice: 3000, title: "Online" },
       ],
-      tags: ["kpsc"],
+      tags: ["kpsc", "prelims"],
       classes: "6 Hours",
     },
     {
@@ -66,7 +53,7 @@ const CourseDetails = () => {
         { price: 10500, discountedPrice: 21000, title: "Offline" },
         { price: 10500, discountedPrice: 21000, title: "Online" },
       ],
-      tags: ["kpsc"],
+      tags: ["kpsc", "prelims", "mains"],
       classes: "40 mins",
       limitedSeats: "40",
       totalTests: "40",
@@ -83,7 +70,24 @@ const CourseDetails = () => {
         { price: 10500, discountedPrice: 21000, title: "Offline" },
         { price: 10500, discountedPrice: 21000, title: "Online" },
       ],
-      tags: ["kpsc"],
+      tags: ["kpsc", "prelims", "mains"],
+      classes: "60 mins",
+      limitedSeats: "60",
+      totalTests: "60",
+    },
+    {
+      id: 6,
+      imgSrc: "/images/assets/banner/sprint60.jpeg",
+      description: "Sprint 60 | UPSC Working Professional Batch",
+      duration: "60 Days",
+      title: "Sprint 60",
+      difficulty: 3,
+      ratingsCount: 31,
+      coursePrice: [
+        { price: 10500, discountedPrice: 21000, title: "Offline" },
+        { price: 10500, discountedPrice: 21000, title: "Online" },
+      ],
+      tags: ["upsc", "prelims", "mains"],
       classes: "60 mins",
       limitedSeats: "60",
       totalTests: "60",
