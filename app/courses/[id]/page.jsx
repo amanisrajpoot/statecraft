@@ -17,7 +17,7 @@ export const metadata = {
 const courseData = [
   {
     id: 1,
-    imgSrc: "/images/assets/featureCourses1.jpg",
+    imgSrc: "/images/assets/featureCourses4.jpeg",
     description: "Prelims Cum Mains Foundation(2025)",
     duration: "15 months",
     title: "Foundation Program",

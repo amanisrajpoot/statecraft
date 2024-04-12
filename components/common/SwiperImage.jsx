@@ -22,6 +22,7 @@ const SwiperImage = ({swiperData}) => {
             alt={swiperItem?.title}
             className="lazy-img sm-mt-40"
             key={index}
+            height="400px"
           />
         ))}
       </Slider>

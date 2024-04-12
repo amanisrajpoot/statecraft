@@ -3,8 +3,8 @@ import Image from "next/image";
 const ProjectSlide = ({ slide }) => {
   const images = [
     slide?.imgSrc ?? "",
-    slide?.imgSrc ?? "",
-    slide?.imgSrc ?? "",
+    // slide?.imgSrc ?? "",
+    // slide?.imgSrc ?? "",
   ];
 
   return (
