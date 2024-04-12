@@ -11,7 +11,7 @@ import PortfolioDetailsTitle from "@/components/portfolio/portfolio-details/Port
 import Features from "@/components/home-page/home-3/Features";
 export const metadata = {
   title:
-    "Portfolio Details || Jano - Creative Multipurpose React NextJS Template",
+    "Statecraft - Crafting the path of future..",
 };
 
 const courseData = [
@@ -118,6 +118,38 @@ const courseData = [
     classes: "40 mins",
     limitedSeats: "40",
     totalTests: "40",
+    gallery: [
+      {
+        src: "/images/assets/focus40One.png",
+        width: "460",
+        height: "400",
+        alt: "media",
+      },
+      {
+        src: "/images/assets/focus40Two.png",
+        width: "460",
+        height: "400",
+        alt: "media",
+      },
+    ],
+  },
+  {
+    id: 5,
+    imgSrc: "/images/assets/featureCourses4.jpg",
+    description: "Focus 60 | KPSC KAS Prelims Batch",
+    duration: "60 Days",
+    title: "Focus 60",
+    difficulty: 5,
+    ratingsCount: 310,
+    coursePrice: [
+      { price: 10500, discountedPrice: 21000, title: "Offline" },
+      { price: 10500, discountedPrice: 21000, title: "Online" },
+    ],
+    courseLink: "https://pages.razorpay.com/pl_NsBs2NfKBwNJ3e/view",
+    tags: ["kpsc"],
+    classes: "60 mins",
+    limitedSeats: "60",
+    totalTests: "60",
     gallery: [
       {
         src: "/images/assets/focus40One.png",

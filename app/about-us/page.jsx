@@ -12,7 +12,7 @@ import AboutFounder from "@/components/about/AboutFounder";
 export const metadata = {
   title: "About Us",
 };
-const AboutUsV3 = () => {
+const AboutUs = () => {
   return (
     <>
       {/* <!-- 
@@ -314,4 +314,4 @@ const AboutUsV3 = () => {
   );
 };
 
-export default AboutUsV3;
+export default AboutUs;

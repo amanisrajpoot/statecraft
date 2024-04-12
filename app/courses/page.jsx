@@ -4,7 +4,7 @@ import CallToAction from "@/components/portfolio/CallToAction";
 import CourseDetails from "@/components/courses/CourseDetails";
 import MenuTopTitle from "@/components/header/MenuTopTitle";
 export const metadata = {
-  title: "Portfolio V6 || Jano - Creative Multipurpose React NextJS Template",
+  title: "Statecraft - Crafting the path of future..",
 };
 const Courses = () => {
   return (
