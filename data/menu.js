@@ -1,24 +1,22 @@
 export const menuItems = [
   {
     title: "About Us",
-    link: "/pages-menu/about-us",
+    link: "/about-us",
     isSubmenu: false,
   },
   {
     title: "UPSC",
     subItems: [
-      { title: "About UPSC", link: "/pages-menu/about-us-v2" },
-      { title: "UPSC Prelims Syllabus", link: "/pages-menu/about-us-v2" },
-      { title: "UPSC Mains Syllabus", link: "/pages-menu/about-us-v2" },
+      { title: "About UPSC", link: "/upsc/about-upsc" },
+      { title: "UPSC Syllabus", link: "/upsc/upsc-syllabus" },
     ],
     isSubmenu: true,
   },
   {
     title: "KPSC Courses",
     subItems: [
-      { title: "About KPSC", link: "/pages-menu/about-us-v2" },
-      { title: "KPSC Prelims Syllabus", link: "/pages-menu/about-us-v2" },
-      { title: "KPSC Mains Syllabus", link: "/pages-menu/about-us-v2" },
+      { title: "About KPSC", link: "/kpsc/about-kpsc" },
+      { title: "KPSC Syllabus", link: "/kpsc/kpsc-syllabus" },
     ],
     isSubmenu: true,
   },
