@@ -2,7 +2,7 @@ import DefaulHeader from "@/components/header/DefaulHeader";
 import DefaultFooter from "@/components/footer/DefaultFooter";
 import CallToAction from "@/components/portfolio/CallToAction";
 import CourseDetails from "@/components/courses/CourseDetails";
-import MenuTopTitle from "@/components/header/menuTopTitle";
+import MenuTopTitle from "@/components/header/MenuTopTitle";
 export const metadata = {
   title: "Portfolio V6 || Jano - Creative Multipurpose React NextJS Template",
 };
