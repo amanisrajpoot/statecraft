@@ -19,18 +19,19 @@ import SignUpBanner from "@/components/home-page/home-3/SignUpBanner";
 import Testimonial from "@/components/home-page/home-3/Testimonial";
 import HeroCorousel from "@/components/home-page/home-3/HeroCorousel";
 import FeatureBlockHeader from "@/components/home-page/home-3/FeatureBlockHeader";
-import {
-  CrosswordProvider,
-  CrosswordGrid,
-  DirectionClues,
-} from '@jaredreisinger/react-crossword';
+import dynamic from 'next/dynamic'; // Import dynamic from 'next/dynamic' to dynamically import components
+
+const CrosswordProvider = dynamic(() => import('@jaredreisinger/react-crossword'), { ssr: false });
+const DirectionClues = dynamic(() => import('@jaredreisinger/react-crossword'), { ssr: false });
+const CrosswordGrid = dynamic(() => import('@jaredreisinger/react-crossword'), { ssr: false });
+
 import { useState, useEffect } from "react";
 // export const metadata = {
 //   title: "Statecraft - Crafting the path of future..",
 // };
 
 const education = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(undefined);
   const clue = '';
 
   const data = {
@@ -73,17 +74,20 @@ const education = () => {
   };
 
   useEffect(() => {
-    const handleResize = () => {
+    if (typeof window !== 'undefined') {
+      // Access window.innerWidth only in the browser environment
       setWidth(window.innerWidth);
-    };
 
-    console.log(width);
+      const handleResize = () => {
+        setWidth(window.innerWidth);
+      };
 
-    window.addEventListener('resize', handleResize);
+      window.addEventListener('resize', handleResize);
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
   }, []);
 
   return (
