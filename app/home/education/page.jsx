@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
+import dynamic from 'next/dynamic';
 
 import Footer2 from "@/components/footer/Footer2";
 import CopyrightFooter2 from "@/components/footer/CopyrightFooter2";
@@ -19,11 +20,10 @@ import SignUpBanner from "@/components/home-page/home-3/SignUpBanner";
 import Testimonial from "@/components/home-page/home-3/Testimonial";
 import HeroCorousel from "@/components/home-page/home-3/HeroCorousel";
 import FeatureBlockHeader from "@/components/home-page/home-3/FeatureBlockHeader";
-import dynamic from 'next/dynamic'; // Import dynamic from 'next/dynamic' to dynamically import components
 
-const CrosswordProvider = dynamic(() => import('@jaredreisinger/react-crossword'), { ssr: false });
-const DirectionClues = dynamic(() => import('@jaredreisinger/react-crossword'), { ssr: false });
-const CrosswordGrid = dynamic(() => import('@jaredreisinger/react-crossword'), { ssr: false });
+const CrosswordProvider = dynamic(() => import('@jaredreisinger/react-crossword').then(mod => mod.CrosswordProvider), { ssr: false });
+const DirectionClues = dynamic(() => import('@jaredreisinger/react-crossword').then(mod => mod.DirectionClues), { ssr: false });
+const CrosswordGrid = dynamic(() => import('@jaredreisinger/react-crossword').then(mod => mod.CrosswordGrid), { ssr: false });
 
 import { useState, useEffect } from "react";
 // export const metadata = {
@@ -75,7 +75,6 @@ const education = () => {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      // Access window.innerWidth only in the browser environment
       setWidth(window.innerWidth);
 
       const handleResize = () => {
@@ -88,8 +87,8 @@ const education = () => {
         window.removeEventListener('resize', handleResize);
       };
     }
-  }, []);
-
+  }, [width]);
+  
   return (
     
     <>
@@ -180,26 +179,25 @@ const education = () => {
         
         <CrosswordProvider data={data}>
           <div style={{display:`${width > 428?'flex':''}`,gap: '8em',}}>
-            {width <= 428 ?  <>
-              {/* <div style={{ display:'flex', justifyContent:'center' }}>
-                <DirectionClues direction="across" />
-              </div> */}  
-              <div style={{ width: '24em' }}>
-                <CrosswordGrid />
-              </div>
-              <div style={{ display:'flex', justifyContent:'center',gap: '4em', paddingTop:'2em' }}>
-                <DirectionClues direction="across" />
-                <DirectionClues direction="down" />
-              </div>
-            </>
-            :
-            <>
-              <DirectionClues direction="across" />
-              <div style={{ width: '24em' }}>
-                <CrosswordGrid />
-              </div>
-              <DirectionClues direction="down" />
-            </>}
+          {width <= 428 ? (
+                <>
+                  <div style={{ width: '24em' }}>
+                    <CrosswordGrid />
+                  </div>
+                  <div style={{ display: 'flex', justifyContent: 'center', gap: '4em', paddingTop: '2em' }}>
+                    <DirectionClues direction="across" />
+                    <DirectionClues direction="down" />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <DirectionClues direction="across" />
+                  <div style={{ width: '24em' }}>
+                    <CrosswordGrid />
+                  </div>
+                  <DirectionClues direction="down" />
+                </>
+              )}
 
           </div>
         </CrosswordProvider>
