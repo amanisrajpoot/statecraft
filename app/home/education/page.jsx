@@ -1,3 +1,5 @@
+'use client'
+
 import Link from "next/link";
 import React from "react";
 
@@ -17,13 +19,75 @@ import SignUpBanner from "@/components/home-page/home-3/SignUpBanner";
 import Testimonial from "@/components/home-page/home-3/Testimonial";
 import HeroCorousel from "@/components/home-page/home-3/HeroCorousel";
 import FeatureBlockHeader from "@/components/home-page/home-3/FeatureBlockHeader";
-
-export const metadata = {
-  title: "Statecraft - Crafting the path of future..",
-};
+import {
+  CrosswordProvider,
+  CrosswordGrid,
+  DirectionClues,
+} from '@jaredreisinger/react-crossword';
+import { useState, useEffect } from "react";
+// export const metadata = {
+//   title: "Statecraft - Crafting the path of future..",
+// };
 
 const education = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+  const clue = '';
+
+  const data = {
+    across: {
+      1: { clue: 'This', answer: 'XXX', row: 0, col: 0 },
+      4: { clue: 'is', answer: 'XXX', row: 0, col: 4 },
+      7: { clue: 'not', answer: 'XXX', row: 1, col: 0 },
+      8: { clue: 'a', answer: 'XXXX', row: 1, col: 4 },
+      10: { clue: 'real', answer: 'XX', row: 2, col: 0 },
+      11: { clue: 'crossword,', answer: 'XX', row: 2, col: 3 },
+      12: { clue: 'it', answer: 'XX', row: 2, col: 6 },
+      13: { clue: 'is', answer: 'XXXXXX', row: 3, col: 0 },
+      16: { clue: 'only', answer: 'XXXXXX', row: 4, col: 2 },
+      19: { clue: 'showing', answer: 'XX', row: 5, col: 0 },
+      21: { clue: 'the', answer: 'XX', row: 5, col: 3 },
+      22: { clue: 'kind', answer: 'XX', row: 5, col: 6 },
+      23: { clue: 'of', answer: 'XXXX', row: 6, col: 0 },
+      25: { clue: 'thing', answer: 'XXX', row: 6, col: 5 },
+      26: { clue: 'you', answer: 'XXX', row: 7, col: 1 },
+      27: { clue: 'can', answer: 'XXX', row: 7, col: 5 },
+    },
+    down: {
+      1: { clue: 'create.', answer: 'XXXX', row: 0, col: 0 },
+      2: { clue: 'All', answer: 'XXXX', row: 0, col: 1 },
+      3: { clue: 'of', answer: 'XX', row: 0, col: 2 },
+      4: { clue: 'the', answer: 'XXXXXX', row: 0, col: 4 },
+      5: { clue: 'answers', answer: 'XX', row: 0, col: 5 },
+      6: { clue: 'are', answer: 'XXX', row: 0, col: 6 },
+      9: { clue: '"X"', answer: 'XX', row: 1, col: 7 },
+      11: { clue, answer: 'XXXXXX', row: 2, col: 3 },
+      14: { clue, answer: 'XX', row: 3, col: 2 },
+      15: { clue, answer: 'XX', row: 3, col: 5 },
+      17: { clue, answer: 'XXXX', row: 4, col: 6 },
+      18: { clue, answer: 'XXXX', row: 4, col: 7 },
+      19: { clue, answer: 'XX', row: 5, col: 0 },
+      20: { clue, answer: 'XXX', row: 5, col: 1 },
+      24: { clue, answer: 'XX', row: 6, col: 2 },
+      25: { clue, answer: 'XX', row: 6, col: 5 },
+    },
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    console.log(width);
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
+    
     <>
       {/* <!--  =============================================
         Theme Header3 Menu
@@ -107,8 +171,34 @@ const education = () => {
         <div class="text-center">
           <h2 class="text-lg font-semibold text-black">Crossword of the Day</h2>
         </div>
-        <div class="mt-4">
-        <iframe width="100%" height="700px" style={{border:"3px solid black", margin:"auto", display:"block"}} frameborder="0" src="https://crosswordlabs.com/embed/current-affair-suduko-2"></iframe>
+        <div class="mt-4" style={{display: 'flex', justifyContent:'center'}}>
+        {/* <iframe width="100%" height="700px" style={{border:"3px solid black", margin:"auto", display:"block"}} frameborder="0" src="https://crosswordlabs.com/embed/todays-current-affair-suduko"></iframe> */}
+        
+        <CrosswordProvider data={data}>
+          <div style={{display:`${width > 428?'flex':''}`,gap: '8em',}}>
+            {width <= 428 ?  <>
+              {/* <div style={{ display:'flex', justifyContent:'center' }}>
+                <DirectionClues direction="across" />
+              </div> */}  
+              <div style={{ width: '24em' }}>
+                <CrosswordGrid />
+              </div>
+              <div style={{ display:'flex', justifyContent:'center',gap: '4em', paddingTop:'2em' }}>
+                <DirectionClues direction="across" />
+                <DirectionClues direction="down" />
+              </div>
+            </>
+            :
+            <>
+              <DirectionClues direction="across" />
+              <div style={{ width: '24em' }}>
+                <CrosswordGrid />
+              </div>
+              <DirectionClues direction="down" />
+            </>}
+
+          </div>
+        </CrosswordProvider>
         </div>
       </div>
       

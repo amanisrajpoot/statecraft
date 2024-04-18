@@ -30,9 +30,9 @@ const Header3 = () => {
       }`}
     >
       <div className="notice-banner text-center">
-        It&lsquo;s the last day to save. The skills for now —
-        <a href="#" className="fw-500">
-          now on sale.
+        {/* It&lsquo;s*/} The last days to save, on the courses —
+        <a href="/courses" className="fw-500">
+          limited time sale.
         </a>
       </div>
       {/* End notice banner */}

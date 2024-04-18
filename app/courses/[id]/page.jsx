@@ -179,7 +179,7 @@ const courseData = [
       { price: 10500, discountedPrice: 21000, title: "Offline" },
       { price: 10500, discountedPrice: 21000, title: "Online" },
     ],
-    courseLink: "https://pages.razorpay.com/pl_NsBs2NfKBwNJ3e/view",
+    courseLink: "https://rzp.io/l/MeTC7oT",
     tags: ["kpsc"],
     classes: "60 mins",
     limitedSeats: "60",
