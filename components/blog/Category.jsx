@@ -1,11 +1,17 @@
+"use client"
+import React, { useState, useEffect } from "react";
+
 const Category = () => {
-  const categories = [
-    { name: "Digital", count: 3 },
-    { name: "Marketing", count: 4 },
-    { name: "Design", count: 2 },
-    { name: "WordPress", count: 8 },
-    { name: "Plugin", count: 5 },
-  ];
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    fetch('https://statecraft.in/wp-json/wp/v2/categories')
+      .then(response => response.json())
+      .then(categories => {
+        setCategories(categories);
+      })
+      .catch(error => console.error('Error fetching categories:', error));
+  }, []);
 
   return (
     <ul className="style-none">

@@ -20,6 +20,8 @@ import SignUpBanner from "@/components/home-page/home-3/SignUpBanner";
 import Testimonial from "@/components/home-page/home-3/Testimonial";
 import HeroCorousel from "@/components/home-page/home-3/HeroCorousel";
 import FeatureBlockHeader from "@/components/home-page/home-3/FeatureBlockHeader";
+import MediaQuery from 'react-responsive';
+import { useRouter } from 'next/navigation';
 
 const CrosswordProvider = dynamic(() => import('@jaredreisinger/react-crossword').then(mod => mod.CrosswordProvider), { ssr: false });
 const DirectionClues = dynamic(() => import('@jaredreisinger/react-crossword').then(mod => mod.DirectionClues), { ssr: false });
@@ -32,45 +34,29 @@ import { useState, useEffect } from "react";
 
 const education = () => {
   const [width, setWidth] = useState(undefined);
+  const router = useRouter();
   const clue = '';
-
   const data = {
     across: {
-      1: { clue: 'This', answer: 'XXX', row: 0, col: 0 },
-      4: { clue: 'is', answer: 'XXX', row: 0, col: 4 },
-      7: { clue: 'not', answer: 'XXX', row: 1, col: 0 },
-      8: { clue: 'a', answer: 'XXXX', row: 1, col: 4 },
-      10: { clue: 'real', answer: 'XX', row: 2, col: 0 },
-      11: { clue: 'crossword,', answer: 'XX', row: 2, col: 3 },
-      12: { clue: 'it', answer: 'XX', row: 2, col: 6 },
-      13: { clue: 'is', answer: 'XXXXXX', row: 3, col: 0 },
-      16: { clue: 'only', answer: 'XXXXXX', row: 4, col: 2 },
-      19: { clue: 'showing', answer: 'XX', row: 5, col: 0 },
-      21: { clue: 'the', answer: 'XX', row: 5, col: 3 },
-      22: { clue: 'kind', answer: 'XX', row: 5, col: 6 },
-      23: { clue: 'of', answer: 'XXXX', row: 6, col: 0 },
-      25: { clue: 'thing', answer: 'XXX', row: 6, col: 5 },
-      26: { clue: 'you', answer: 'XXX', row: 7, col: 1 },
-      27: { clue: 'can', answer: 'XXX', row: 7, col: 5 },
+      1: { clue: 'High Mobility Artillery Rocket System abbreviation (6)', answer: 'HIMARS', row: 0, col: 0 },
+      4: { clue: 'Final report by police after investigation (10)', answer: 'CHARGESHEET', row: 1, col: 0 },
+      7: { clue: 'Technical requirements ensuring device compatibility (9)', answer: 'STANDARDS', row: 2, col: 0 },
+      9: { clue: 'Alliance of five English-speaking countries (9)', answer: 'FIVEEYES', row: 3, col: 0 },
+      11: { clue: 'Alliance focusing on signals intelligence (6)', answer: 'SIGINT', row: 4, col: 0 },
+      14: { clue: 'UN body focused on population development (4)', answer: 'CPD', row: 5, col: 0 },
+      16: { clue: 'Technology for managing transportation systems (3)', answer: 'ITS', row: 6, col: 0 }
     },
     down: {
-      1: { clue: 'create.', answer: 'XXXX', row: 0, col: 0 },
-      2: { clue: 'All', answer: 'XXXX', row: 0, col: 1 },
-      3: { clue: 'of', answer: 'XX', row: 0, col: 2 },
-      4: { clue: 'the', answer: 'XXXXXX', row: 0, col: 4 },
-      5: { clue: 'answers', answer: 'XX', row: 0, col: 5 },
-      6: { clue: 'are', answer: 'XXX', row: 0, col: 6 },
-      9: { clue: '"X"', answer: 'XX', row: 1, col: 7 },
-      11: { clue, answer: 'XXXXXX', row: 2, col: 3 },
-      14: { clue, answer: 'XX', row: 3, col: 2 },
-      15: { clue, answer: 'XX', row: 3, col: 5 },
-      17: { clue, answer: 'XXXX', row: 4, col: 6 },
-      18: { clue, answer: 'XXXX', row: 4, col: 7 },
-      19: { clue, answer: 'XX', row: 5, col: 0 },
-      20: { clue, answer: 'XXX', row: 5, col: 1 },
-      24: { clue, answer: 'XX', row: 6, col: 2 },
-      25: { clue, answer: 'XX', row: 6, col: 5 },
-    },
+      2: { clue: 'Manufacturer of HIMARS (7)', answer: 'LOCKHEED', row: 0, col: 1 },
+      3: { clue: 'Country providing military aid to Ukraine (3)', answer: 'USA', row: 0, col: 7 },
+      5: { clue: 'Legal code under which a charge sheet is filed (4)', answer: 'CRPC', row: 1, col: 4 },
+      6: { clue: 'Deadline for filing a charge sheet in lower courts (4)', answer: 'DAYS', row: 2, col: 4 },
+      8: { clue: 'Patents crucial for implementing standards (4)', answer: 'SEPS', row: 3, col: 4 },
+      10: { clue: 'Country part of Five Eyes alliance (6)', answer: 'CANADA', row: 4, col: 4 },
+      12: { clue: 'Indian region rich in fossils and heritage (4)', answer: 'GARO', row: 5, col: 4 },
+      13: { clue: 'Intelligence-sharing alliance\'s founding agreement year (4)', answer: '1946', row: 6, col: 4 },
+      15: { clue: 'Agency providing technical assistance for censuses (5)', answer: 'UNFPA', row: 6, col: 6 }
+    }
   };
 
   useEffect(() => {
@@ -88,6 +74,14 @@ const education = () => {
       };
     }
   }, [width]);
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash && hash.includes('#crossword')) {
+      const crosswordSection = document.getElementById('crossword');
+      crosswordSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [router.asPath]);
   
   return (
     
@@ -170,7 +164,7 @@ const education = () => {
 		Feature Section Forty Two
 		============================================== 
 		*/}
-    <div class="mx-auto max-w-screen-lg mt-80 mb-20">
+    <div class="mx-auto max-w-screen-lg mt-80 mb-20" id="crossword">
         <div class="text-center">
           <h2 class="text-lg font-semibold text-black">Crossword of the Day</h2>
         </div>
@@ -181,22 +175,23 @@ const education = () => {
           <div style={{display:`${width > 428?'flex':''}`,gap: '8em',}}>
           {width <= 428 ? (
                 <>
-                  <div style={{ width: '24em' }}>
+                  <div style={{ width: '24em', paddingLeft:'2em'}}>
                     <CrosswordGrid />
                   </div>
-                  <div style={{ display: 'flex', justifyContent: 'center', gap: '4em', paddingTop: '2em' }}>
+                  <div style={{ display: 'flex', justifyContent: 'center', gap: '4em', paddingTop: '2em', 
+                    paddingLeft:'1em', paddingRight:'1em' }}>
                     <DirectionClues direction="across" />
                     <DirectionClues direction="down" />
                   </div>
                 </>
               ) : (
-                <>
+                <div style={{paddingLeft:'2em', paddingRight:'2em', display: 'flex', justifyContent: 'center', gap: '4em', }}>
                   <DirectionClues direction="across" />
                   <div style={{ width: '24em' }}>
                     <CrosswordGrid />
                   </div>
                   <DirectionClues direction="down" />
-                </>
+                </div>
               )}
 
           </div>

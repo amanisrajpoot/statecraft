@@ -14,7 +14,7 @@ const GridWithSidebar = () => {
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 10; // Display 10 posts per page
-  const totalPostsToFetch = 50; // Fetch 20 posts initially
+  const totalPostsToFetch = 30; // Fetch 30 posts initially
 
   useEffect(() => {
     fetch(`https://statecraft.in/wp-json/wp/v2/posts?per_page=${totalPostsToFetch}&_embed`)
@@ -62,12 +62,8 @@ const GridWithSidebar = () => {
             <div className="row gx-xl-5">
               <div className="col-lg-8">
               <div className="page-pagination-one pt-15">
-                  <Pagination
-                    totalPosts={posts.length}
-                    postsPerPage={postsPerPage}
-                    currentPage={currentPage}
-                    onPageChange={handlePageChange}
-                  />
+              <h2 className="blog-heading-one tx-dark">Current Affairs And Editorials</h2>
+                    
                 </div>
                 <div className="blog-meta-wrapper pe-xxl-5">
                   <div className="row">
@@ -85,7 +81,7 @@ const GridWithSidebar = () => {
                               post.featured_media_urls?.full ||
                               "/images/blog/blog_10.jpg"
                             }
-                            alt="blog"
+                            alt=" "
                             className="lazy-img"
                           />
                         </div>

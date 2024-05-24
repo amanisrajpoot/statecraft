@@ -152,9 +152,9 @@ export const portfolioItems = [
 ];
 
 export const blogItems = [
-  { link: "#", text: "Coming Soon.." }
-  // { link: "/blog/blog-v1", text: "Editorial" },
-  // { link: "/blog/blog-v2", text: "Current Affair" },
+  // { link: "#", text: "Coming Soon.." },
+  { link: "/blog", text: "Editorial" },
+  { link: "/blog", text: "Current Affair" },
 ];
 export const contactItems = [
   { link: "/contact/contact-v1", text: "Contact - Insurance" },

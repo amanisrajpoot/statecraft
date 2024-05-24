@@ -1,20 +1,28 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-const Pagination = () => {
-  const [activePage, setActivePage] = useState(1);
-  const pageNumbers = [1, 2, 3, 4]; // replace with actual page numbers
+const Pagination = ({ totalPosts, postsPerPage, currentPage, onPageChange }) => {
+  const [pageNumbers, setPageNumbers] = useState([]);
+
+  useEffect(() => {
+    const totalPages = Math.ceil(totalPosts / postsPerPage);
+    const pages = [];
+    for (let i = 1; i <= totalPages; i++) {
+      pages.push(i);
+    }
+    setPageNumbers(pages);
+  }, [totalPosts, postsPerPage]);
 
   const handlePageClick = (pageNumber) => {
-    setActivePage(pageNumber);
+    onPageChange(pageNumber);
   };
 
   return (
     <ul className="d-flex align-items-center style-none">
       {pageNumbers.map((pageNumber) => (
         <li
-          className={pageNumber === activePage ? "active" : ""}
+          className={pageNumber === currentPage ? "active" : ""}
           key={pageNumber}
           onClick={() => handlePageClick(pageNumber)}
         >

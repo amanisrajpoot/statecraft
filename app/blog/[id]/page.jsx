@@ -1,4 +1,7 @@
-import DefaulHeader from "@/components/header/DefaulHeader";
+"use client"
+
+import React, { useState, useEffect } from 'react';
+import DefaultHeader from "@/components/header/DefaulHeader";
 import DefaultFooter from "@/components/footer/DefaultFooter";
 import SearchBox from "@/components/blog/SearchBox";
 import Category from "@/components/blog/Category";
@@ -10,15 +13,24 @@ import SingleComments from "@/components/blog/blog-details/SingleComments";
 import CommentBox from "@/components/blog/blog-details/CommentBox";
 import Link from "next/link";
 
-import blogsData from "@/data/blog";
-import Image from "next/image";
-export const metadata = {
-  title:
-    "Dynamic Blog Details || Jano - Creative Multipurpose React NextJS Template",
-};
 const DynamicBlogDetails = ({ params }) => {
   const id = params.id;
-  const blog = blogsData.find((item) => item.id == id) || blogsData[0];
+  const [post, setPost] = useState(null);
+
+  useEffect(() => {
+    fetch(`https://statecraft.in/wp-json/wp/v2/posts/${id}?_embed`)
+      .then(response => response.json())
+      .then(data => {
+        setPost(data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, [id]);
+
+  if (!post) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
@@ -27,7 +39,7 @@ const DynamicBlogDetails = ({ params }) => {
       Theme Default Menu
       ============================================== 	
       --> */}
-      <DefaulHeader />
+      <DefaultHeader />
 
       {/* 
 			=============================================
@@ -39,12 +51,12 @@ const DynamicBlogDetails = ({ params }) => {
           <div className="row">
             <div className="col-xxl-8 col-lg-9" data-aos="fade-right">
               <p className="blog-pubish-date">
-                Digital Marketing . 2 July . By
+                Current Affairs and Editorials . {`${new Date(post.date).toLocaleDateString('en-US', { day: 'numeric', month: 'long' })} . By `}
                 <a href="#" className="fw-500">
-                  Hasan Ira
+                  {post._embedded.author[0].name.split(" ")[0]}
                 </a>
               </p>
-              <h2 className="blog-heading-one tx-dark">{blog?.title}</h2>
+              <h2 className="blog-heading-one tx-dark">{post.title.rendered}</h2>
             </div>
           </div>
         </div>
@@ -69,62 +81,7 @@ const DynamicBlogDetails = ({ params }) => {
               <div className="col-lg-8">
                 <div className="blog-meta-wrapper pe-xxl-5">
                   <article className="blog-details-content">
-                    {blog.imageSrc && (
-                      <Image
-                        width={816}
-                        height={597}
-                        layout="responsive"
-                        src={blog.imageSrc}
-                        alt={blog.title}
-                        className="lazy-img image-meta w-100"
-                      />
-                    )}
-                    <p>
-                      Tomfoolery crikey bits and bobs brilliant bamboozled down
-                      the pub amongst brolly hanky panky, cack bonnet arse over
-                      tit burke bugger all mate bodge. cillum dolore eu fugiat
-                      pariatur. Excepteur sint occaecat cupidatat non proident,
-                      sunt in culpa qui officia deserunt mollit anim id est
-                      laborum.Suspendisse interdum consectetur libero id faucibu
-                      nisl. Lacus vel facilisis volutpat est velit egestas.
-                    </p>
-                    <p>
-                      Tempus imperdiet nulla malesuada pellentesque elit eget
-                      gravida cum. Sit amet ris nullam eget felis. Enim praesent
-                      elementum facilisis leo. Ultricies leo integer.
-                    </p>
-                    <Image
-                      width={800}
-                      height={410}
-                      src="/images/blog/blog_img_26.jpg"
-                      alt="blog"
-                      className="lazy-img image-meta w-100"
-                    />
-                    <h4>
-                      This response is important for our ability to from
-                      mistakes but it alsogives rise to self-criticism.
-                    </h4>
-                    <p>
-                      One touch of a red-hot stove is usually all we need to
-                      avoid that kind of discomfort in future The same is true
-                      as we experienc the emotional of stress from our
-                      instances. We are quickly learn to fear and thus
-                      automatically. Lorem ipsum dolor sit amet, consectetur
-                      adipis elit quis extraction labore.
-                    </p>
-                    <h2>Work Harder &amp; Gain Succsess</h2>
-                    <p>
-                      One touch of a red-hot stove is usually all we need to
-                      avoid that kind of discomfort in quis elit future. The
-                      same Duis aute irure dolor in reprehenderit .
-                    </p>
-                    <p>
-                      is true as we experience the emotional sensation of stress
-                      from our firs social rejec ridicule.We quickly learn to
-                      fear and thus automatically. potentially stressful
-                      situation of wlir ext quiert all kinds, including the most
-                      common of all.
-                    </p>
+                    <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
                     <div className="bottom-widget d-sm-flex align-items-center justify-content-between">
                       <Tag />
                       <SocialShare />
@@ -173,7 +130,7 @@ const DynamicBlogDetails = ({ params }) => {
                   {/* /.blog-sidebar-category */}
 
                   <div className="sidebar-recent-news mb-60 md-mb-50">
-                    <h4 className="sidebar-title">Recent News</h4>
+                    <h4 className="sidebar-title">Recent Updates</h4>
                     <RecentPost />
                   </div>
                   {/* /.sidebar-recent-news */}
