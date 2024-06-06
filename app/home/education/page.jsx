@@ -38,26 +38,28 @@ const education = () => {
   const clue = '';
   const data = {
     across: {
-      1: { clue: 'High Mobility Artillery Rocket System abbreviation (6)', answer: 'HIMARS', row: 0, col: 0 },
-      4: { clue: 'Final report by police after investigation (10)', answer: 'CHARGESHEET', row: 1, col: 0 },
-      7: { clue: 'Technical requirements ensuring device compatibility (9)', answer: 'STANDARDS', row: 2, col: 0 },
-      9: { clue: 'Alliance of five English-speaking countries (9)', answer: 'FIVEEYES', row: 3, col: 0 },
-      11: { clue: 'Alliance focusing on signals intelligence (6)', answer: 'SIGINT', row: 4, col: 0 },
-      14: { clue: 'UN body focused on population development (4)', answer: 'CPD', row: 5, col: 0 },
-      16: { clue: 'Technology for managing transportation systems (3)', answer: 'ITS', row: 6, col: 0 }
-    },
-    down: {
-      2: { clue: 'Manufacturer of HIMARS (7)', answer: 'LOCKHEED', row: 0, col: 1 },
-      3: { clue: 'Country providing military aid to Ukraine (3)', answer: 'USA', row: 0, col: 7 },
-      5: { clue: 'Legal code under which a charge sheet is filed (4)', answer: 'CRPC', row: 1, col: 4 },
-      6: { clue: 'Deadline for filing a charge sheet in lower courts (4)', answer: 'DAYS', row: 2, col: 4 },
-      8: { clue: 'Patents crucial for implementing standards (4)', answer: 'SEPS', row: 3, col: 4 },
-      10: { clue: 'Country part of Five Eyes alliance (6)', answer: 'CANADA', row: 4, col: 4 },
-      12: { clue: 'Indian region rich in fossils and heritage (4)', answer: 'GARO', row: 5, col: 4 },
-      13: { clue: 'Intelligence-sharing alliance\'s founding agreement year (4)', answer: '1946', row: 6, col: 4 },
-      15: { clue: 'Agency providing technical assistance for censuses (5)', answer: 'UNFPA', row: 6, col: 6 }
+      1: {"clue": "Peacekeeper awarded posthumous medal (4)", "answer": "NAIK", "row": 0, "col": 0},
+      3: {"clue": "UN medal for fallen peacekeepers (7)", "answer": "HAMMARSK", "row": 1, "col": 0},
+      5: {"clue": "Country where MONUSCO operates (5)", "answer": "CONGO", "row": 2, "col": 0},
+      8: {"clue": "Former UN Secretary-General Hammarskjöld (3)", "answer": "DAG", "row": 3, "col": 0},
+      10: {"clue": "Date of Peacekeeper's Day (3)", "answer": "MAY", "row": 4, "col": 0},
+      12: {"clue": "Theme for 2024 Peacekeepers Day (3)", "answer": "FIT", "row": 5, "col": 0},
+      14: {"clue": "UN Department supporting peace missions (3)", "answer": "DPO", "row": 6, "col": 0},
+      16: {"clue": "Indian all-women police unit's deployment year (4)", "answer": "2007", "row": 7, "col": 0}
+  },
+  
+  down: {
+      2: {"clue": "Mission Naik Dhananjay Kumar Singh served in (4)", "answer": "MONO", "row": 0, "col": 1},
+      4: {"clue": "Year MONUSCO was established (4)", "answer": "2010", "row": 1, "col": 3},
+      6: {"clue": "Naik Dhananjay Kumar Singh's nationality (5)", "answer": "INDIA", "row": 2, "col": 1},
+      7: {"clue": "Cause of Dag Hammarskjöld's death (5)", "answer": "CRASH", "row": 3, "col": 1},
+      9: {"clue": "Established UN Peacekeepers Day (2)", "answer": "UN", "row": 4, "col": 1},
+      11: {"clue": "Peacekeepers' Day established year (4)", "answer": "2002", "row": 5, "col": 1},
+      13: {"clue": "Number of countries served by peacekeepers (2)", "answer": "11", "row": 6, "col": 1},
+      15: {"clue": "Country where India deployed FETs (5)", "answer": "ABYEI", "row": 7, "col": 1},
+      17: {"clue": "Peacekeeping principle: of parties (7)", "answer": "CONSENT", "row": 8, "col": 0}
     }
-  };
+  }
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
