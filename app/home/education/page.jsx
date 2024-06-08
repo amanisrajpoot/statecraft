@@ -189,7 +189,7 @@ const education = () => {
               ) : (
                 <div style={{paddingLeft:'2em', paddingRight:'2em', display: 'flex', justifyContent: 'center', gap: '4em', }}>
                   <DirectionClues direction="across" />
-                  <div style={{ width: '24em' }}>
+                  <div style={{ minWidth: '24em' }}>
                     <CrosswordGrid />
                   </div>
                   <DirectionClues direction="down" />
