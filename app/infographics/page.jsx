@@ -1,10 +1,13 @@
+'use client'
+
 import DefaulHeader from "@/components/header/DefaulHeader";
 import DefaultFooter from "@/components/footer/DefaultFooter";
 import PortfolioGallery4 from "@/components/portfolio/PortfolioGallery4";
 import DownloadDetails from "@/components/downloads/DownloadDetails";
-export const metadata = {
-  title: "StateCraft || Crafting the Path to Succes...",
-};
+import { Document, Page, pdfjs } from 'react-pdf';
+// export const metadata = {
+//   title: "StateCraft || Crafting the Path to Succes...",
+// };
 
 const infographicsData = [
   {
@@ -21,7 +24,11 @@ const infographicsData = [
   },
 ];
 
+//pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
 const Infographics = () => {
+  const fileId = '1kNW3n_KhDdRXnWzTbwRj5Px7JG8L1Xsa'; // Replace with your Google Drive file ID
+  const pdfUrl = `https://drive.google.com/file/d/${fileId}/preview`;
   return (
     <>
       {/* <!-- 
@@ -74,6 +81,41 @@ const Infographics = () => {
         ============================================== 
         --> */}
       <DownloadDetails downloadData={infographicsData} />
+
+      <div style={{ position: 'relative', width: '100%', height: '800px' }}>
+  <iframe
+    src={pdfUrl}
+    title="PDF Viewer"
+    width="100%"
+    height="100%"
+    frameBorder="0"
+    scrolling="no"
+    seamless
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      zIndex: 1,
+    }}
+    sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+    allow="autoplay"
+  />
+  <div
+    style={{
+      position: 'absolute',
+      top: 0,
+      right: 0,
+      width: '55px',
+      height: '64px',
+      backgroundColor: 'white',
+      zIndex: 2,
+    }}
+    onClick={(e) => e.stopPropagation()} // Prevent clicks from propagating
+  />
+</div>
+
 
       {/* 
         =============================================
