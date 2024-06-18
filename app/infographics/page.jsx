@@ -106,9 +106,9 @@ const Infographics = () => {
     style={{
       position: 'absolute',
       top: 0,
-      right: 0,
+      right: 10,
       width: '55px',
-      height: '64px',
+      height: '77px',
       backgroundColor: '#303030',
       zIndex: 2,
     }}
