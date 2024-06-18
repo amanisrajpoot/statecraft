@@ -109,7 +109,7 @@ const Infographics = () => {
       right: 0,
       width: '55px',
       height: '64px',
-      backgroundColor: 'white',
+      backgroundColor: '#303030',
       zIndex: 2,
     }}
     onClick={(e) => e.stopPropagation()} // Prevent clicks from propagating
