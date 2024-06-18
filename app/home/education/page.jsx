@@ -38,27 +38,25 @@ const education = () => {
   const clue = '';
   const data = {
     across: {
-      1: {"clue": "Peacekeeper awarded posthumous medal (4)", "answer": "NAIK", "row": 0, "col": 0},
-      3: {"clue": "UN medal for fallen peacekeepers (7)", "answer": "HAMMARSK", "row": 1, "col": 0},
-      5: {"clue": "Country where MONUSCO operates (5)", "answer": "CONGO", "row": 2, "col": 0},
-      8: {"clue": "Former UN Secretary-General Hammarskjöld (3)", "answer": "DAG", "row": 3, "col": 0},
-      10: {"clue": "Date of Peacekeeper's Day (3)", "answer": "MAY", "row": 4, "col": 0},
-      12: {"clue": "Theme for 2024 Peacekeepers Day (3)", "answer": "FIT", "row": 5, "col": 0},
-      14: {"clue": "UN Department supporting peace missions (3)", "answer": "DPO", "row": 6, "col": 0},
-      16: {"clue": "Indian all-women police unit's deployment year (4)", "answer": "2007", "row": 7, "col": 0}
+      1: {"clue": "The 46th Antarctic Treaty Consultative Meeting is hosted by this Indian ministry (6, 8)", "answer": "EARTHSCIENCES", "row": 0, "col": 0},
+      4: {"clue": "The system developed by DRDO for extended targeting of submarines (5)", "answer": "SMART", "row": 2, "col": 0},
+      6: {"clue": "The first Indian research base in Antarctica (8)", "answer": "DAKSHINGANGOTRI", "row": 4, "col": 0},
+      8: {"clue": "The number of main territorial claims in Antarctica (8)", "answer": "EIGHT", "row": 6, "col": 0},
+      10: {"clue": "A treaty aimed at addressing plastic pollution globally (6, 6)", "answer": "PLASTICSTREATY", "row": 8, "col": 0},
+      12: {"clue": "The classification status achieved by IREDA recently (8)", "answer": "NAVRATNA", "row": 10, "col": 0},
+      13: {"clue": "The court emphasized elections as this within India's constitutional framework (10)", "answer": "CONSTITUTIONAL", "row": 12, "col": 0}
   },
   
   down: {
-      2: {"clue": "Mission Naik Dhananjay Kumar Singh served in (4)", "answer": "MONO", "row": 0, "col": 1},
-      4: {"clue": "Year MONUSCO was established (4)", "answer": "2010", "row": 1, "col": 3},
-      6: {"clue": "Naik Dhananjay Kumar Singh's nationality (5)", "answer": "INDIA", "row": 2, "col": 1},
-      7: {"clue": "Cause of Dag Hammarskjöld's death (5)", "answer": "CRASH", "row": 3, "col": 1},
-      9: {"clue": "Established UN Peacekeepers Day (2)", "answer": "UN", "row": 4, "col": 1},
-      11: {"clue": "Peacekeepers' Day established year (4)", "answer": "2002", "row": 5, "col": 1},
-      13: {"clue": "Number of countries served by peacekeepers (2)", "answer": "11", "row": 6, "col": 1},
-      15: {"clue": "Country where India deployed FETs (5)", "answer": "ABYEI", "row": 7, "col": 1},
-      17: {"clue": "Peacekeeping principle: of parties (7)", "answer": "CONSENT", "row": 8, "col": 0}
-    }
+      1: {"clue": "One of the six performance indicators for a PSU to qualify for Navratna status (8)", "answer": "NETPROFIT", "row": 0, "col": 1},
+      2: {"clue": "The Indian Institute of Astrophysics captured the passage of the moon in front of this star (7)", "answer": "ANTARES", "row": 0, "col": 5},
+      3: {"clue": "This Hindu ritual is significant for marriage registration under the Hindu Marriage Act, 1955 (9)", "answer": "SAPTAPADI", "row": 1, "col": 8},
+      5: {"clue": "The treaty negotiations were held in this Canadian city (6)", "answer": "OTTAWA", "row": 3, "col": 4},
+      7: {"clue": "The observatory where the SMART system was tested (5)", "answer": "ODISHA", "row": 5, "col": 6},
+      9: {"clue": "These monkeys are rare and serve as biodiversity indicators (3, 7)", "answer": "REDCOLOBUS", "row": 7, "col": 3},
+      11: {"clue": "The framework for understanding quarks (10)", "answer": "CHROMODYNAMICS", "row": 9, "col": 5},
+      14: {"clue": "The phenomenon of particle dynamics studied through quark clumps (6)", "answer": "QUARKS", "row": 13, "col": 1}
+  }
   }
 
   useEffect(() => {
