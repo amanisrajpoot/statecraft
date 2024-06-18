@@ -172,8 +172,8 @@ const education = () => {
         {/* <iframe width="100%" height="700px" style={{border:"3px solid black", margin:"auto", display:"block"}} frameborder="0" src="https://crosswordlabs.com/embed/todays-current-affair-suduko"></iframe> */}
         
         <CrosswordProvider data={data}>
-          <div style={{display:`${width > 428?'flex':''}`,gap: '8em',}}>
-          {width <= 428 ? (
+          <div style={{display:`${width > 1290?'flex':''}`,gap: '8em',}}>
+          {width <= 1290 ? (
                 <>
                   <div style={{ width: '24em', paddingLeft:'2em'}}>
                     <CrosswordGrid />
